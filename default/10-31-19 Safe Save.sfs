@@ -11,7 +11,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/default
-	launchID = 47
+	launchID = 48
 	defaultVABLaunchSite = LaunchPad
 	defaultSPHLaunchSite = Runway
 	modded = False
@@ -192,20 +192,20 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 2600905.7419227059
+		update = 3492964.3142754291
 		version = 1.4.5
 		WEIGHTS
 		{
 			TourismContract = 10
 			SurveyContract = 13
-			StationContract = 40
+			StationContract = 64
 			SentinelContract = 30
-			SatelliteContract = 50
+			SatelliteContract = 42
 			ISRUContract = 30
 			ExplorationContract = 30
-			BaseContract = 18
+			BaseContract = 16
 			ARMContract = 30
-			RecoverAsset = 21
+			RecoverAsset = 17
 			PlantFlag = 87
 			PartTest = 12
 			GrandTour = 30
@@ -223,13 +223,79 @@ GAME
 			Duna = 26
 			Eve = 30
 			Moho = 30
-			Minmus = 24
-			Mun = 83
+			Minmus = 32
+			Mun = 75
 			Kerbin = 10
-			Sun = 30
+			Sun = 42
 		}
 		CONTRACTS
 		{
+			CONTRACT
+			{
+				guid = b05bb92d-f377-49a5-b49c-b6184c584124
+				type = StationContract
+				prestige = 1
+				seed = -1369910023
+				state = Active
+				viewed = Read
+				agent = Maxo Construction Toys
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,161028000,107500,278828,107500,0,24,12,2620670.09968574,2601006.1019228,163629006.101923,0
+				targetBody = 3
+				capacity = 5
+				contextual = False
+				PARAM
+				{
+					name = VesselSystemsParameter
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					typeString = station
+					mannedStatus = 2
+					requireNew = True
+					checkModuleTypes = Antenna|Generator|Dock
+					checkModuleDescriptions = has an antenna|has a docking port|can generate power
+					launchID = 47
+				}
+				PARAM
+				{
+					name = CrewCapacityParameter
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					targetCapacity = 5
+				}
+				PARAM
+				{
+					name = CrewTraitParameter
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					targetTrait = Pilot
+					targetCount = 2
+					vesselDescription = station
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+				PARAM
+				{
+					name = LocationAndSituationParameter
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					targetBody = 3
+					targetSituation = ORBITING
+					noun = station
+					finalObjective = False
+				}
+			}
 			CONTRACT
 			{
 				guid = 0819b949-7aa3-4dba-b8e4-ece37fc5bb14
@@ -339,52 +405,16 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 2bf64181-01e7-4563-b002-33e6c622f030
-				type = RecoverAsset
-				prestige = 0
-				seed = -1921073295
-				state = Offered
-				viewed = Unseen
-				agent = STEADLER Engineering Corps
-				deadlineType = Floating
-				expiryType = Floating
-				values = 129600,46008000,23168.3169007301,55577.2253644732,24569.9988842011,0,9.522859,9.900001,2610098.49755969,0,0,0
-				targetBody = 1
-				kerbalName = Lodfry Kerman
-				partName = mk1pod
-				partID = 0
-				recoveryLocation = 1
-				recoveryType = 1
-				PARAM
-				{
-					name = AcquireCrew
-					state = Incomplete
-					values = 5940,0,0,4,0
-					title = Save Lodfry Kerman
-					winOn = 0
-				}
-				PARAM
-				{
-					name = RecoverKerbal
-					state = Incomplete
-					values = 0,0,0,0,0
-					title = Recover Lodfry Kerman on Kerbin
-					failOn = All
-					winOn = All
-				}
-			}
-			CONTRACT
-			{
 				guid = f842b455-c219-441b-9a74-037c90f64e6f
 				type = StationContract
 				prestige = 2
 				seed = -1716361186
-				state = Offered
-				viewed = Unseen
+				state = Active
+				viewed = Read
 				agent = Rokea Inc
 				deadlineType = Floating
 				expiryType = Floating
-				values = 98062.9553979592,194949155.331143,335182.859691193,999787.602944988,344160.96340393,0,36.7132,20,2604955.47746708,0,0,0
+				values = 98062.9553979592,194949155.331143,335182.859691193,999787.602944988,344160.96340393,0,36.7132,20,2604955.47746708,2600947.12192274,197550102.453066,0
 				targetBody = 0
 				capacity = 6
 				contextual = False
@@ -392,18 +422,20 @@ GAME
 				{
 					name = VesselSystemsParameter
 					state = Incomplete
+					disableOnStateChange = False
 					values = 0,0,0,0,0
 					typeString = station
 					mannedStatus = 2
 					requireNew = True
 					checkModuleTypes = Antenna|Generator|Dock
 					checkModuleDescriptions = has an antenna|has a docking port|can generate power
-					launchID = 0
+					launchID = 47
 				}
 				PARAM
 				{
 					name = CrewCapacityParameter
 					state = Incomplete
+					disableOnStateChange = False
 					values = 0,0,0,0,0
 					targetCapacity = 6
 				}
@@ -411,6 +443,7 @@ GAME
 				{
 					name = ResourcePossessionParameter
 					state = Incomplete
+					disableOnStateChange = False
 					values = 0,0,0,0,0
 					goalResource = 7500
 					resourceName = ElectricCharge
@@ -421,6 +454,7 @@ GAME
 				{
 					name = ResourcePossessionParameter
 					state = Incomplete
+					disableOnStateChange = False
 					values = 0,0,0,0,0
 					goalResource = 6000
 					resourceName = LiquidFuel
@@ -431,6 +465,7 @@ GAME
 				{
 					name = StabilityParameter
 					state = Incomplete
+					disableOnStateChange = False
 					values = 0,0,0,0,0
 					holdSeconds = 10
 				}
@@ -438,6 +473,7 @@ GAME
 				{
 					name = LocationAndSituationParameter
 					state = Incomplete
+					disableOnStateChange = False
 					values = 0,0,0,0,0
 					targetBody = 0
 					targetSituation = ORBITING
@@ -447,16 +483,68 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 2ed0f7ab-96ca-43c3-9497-84c95477ddc5
-				type = BaseContract
+				guid = 382107eb-1bfc-4bd2-b201-6325ea43d343
+				type = SatelliteContract
 				prestige = 0
-				seed = -2147061052
+				seed = -1502940106
 				state = Offered
 				viewed = Unseen
-				agent = Dinkelstein Kerman's Construction Emporium
+				agent = C7 Aerospace Division
 				deadlineType = Floating
 				expiryType = Floating
-				values = 108000,128822400,74159.9979400635,196832.985593796,77867.9943008424,0,18.94388,13.65854,2671599.03503397,0,0,0
+				values = 129600,115020000,40000,102500,40000,0,10,5,3533144.55090314,0,0,0
+				targetBody = 3
+				deviation = 7
+				orbitType = 3
+				placementMode = 0
+				PARAM
+				{
+					name = VesselSystemsParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					typeString = probe
+					mannedStatus = 1
+					requireNew = True
+					checkModuleTypes = Antenna|Generator
+					checkModuleDescriptions = has an antenna|can generate power
+					launchID = 0
+				}
+				PARAM
+				{
+					name = SpecificOrbitParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					TargetBody = 3
+					deviationWindow = 7
+					orbitType = 3
+					inclination = 0
+					eccentricity = 0.069346290487395976
+					sma = 382049.19441648183
+					lan = 212.63089599427008
+					argumentOfPeriapsis = 67.919147826066165
+					meanAnomalyAtEpoch = 3.1016213995206647
+					epoch = 0
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+			}
+			CONTRACT
+			{
+				guid = 029e4602-f715-48cc-90f0-314826a022bf
+				type = StationContract
+				prestige = 0
+				seed = -1502940101
+				state = Offered
+				viewed = Unseen
+				agent = Kerlington Model Rockets and Paper Products Inc
+				deadlineType = Floating
+				expiryType = Floating
+				values = 108000,128822400,64000,166000,64000,0,18,9,3511544.55090314,0,0,0
 				targetBody = 2
 				capacity = 5
 				contextual = False
@@ -465,7 +553,7 @@ GAME
 					name = VesselSystemsParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					typeString = outpost
+					typeString = station
 					mannedStatus = 2
 					requireNew = True
 					checkModuleTypes = Antenna|Generator|Dock
@@ -492,25 +580,25 @@ GAME
 					state = Incomplete
 					values = 0,0,0,0,0
 					targetBody = 2
-					targetSituation = LANDED
-					noun = outpost
+					targetSituation = ORBITING
+					noun = station
 					finalObjective = False
 				}
 			}
 			CONTRACT
 			{
-				guid = 4e7a8d88-db43-445a-a57a-097e1bd677e1
+				guid = 8aba9f88-c097-4879-baf6-96b4cfe94875
 				type = SatelliteContract
-				prestige = 2
-				seed = -2147061044
+				prestige = 1
+				seed = -1502940095
 				state = Offered
 				viewed = Unseen
-				agent = Ionic Symphonic Protonic Electronics
+				agent = O.M.B. Demolition Enterprises
 				deadlineType = Floating
 				expiryType = Floating
-				values = 129600,92016000,19200,49200,19200,0,6,3,2693199.03503397,0,0,0
+				values = 108000,92016000,12000,33825.0007331371,13200.0002861023,0,3.636364,2,3511544.55090314,0,0,0
 				targetBody = 2
-				deviation = 3
+				deviation = 5
 				orbitType = 6
 				placementMode = 1
 				PARAM
@@ -542,13 +630,13 @@ GAME
 					state = Incomplete
 					values = 0,0,0,0,0
 					TargetBody = 2
-					deviationWindow = 3
+					deviationWindow = 5
 					orbitType = 6
 					inclination = 123.72112194459417
-					eccentricity = 0.12052530968799309
-					sma = 487177.63789835834
-					lan = 311.85793322632549
-					argumentOfPeriapsis = 65.449165695183495
+					eccentricity = 0.12050910644662691
+					sma = 487168.66241389007
+					lan = 316.2224186294593
+					argumentOfPeriapsis = 97.88578436518354
 					meanAnomalyAtEpoch = -2.9805436327042996
 					epoch = 2006378.0385678713
 				}
@@ -562,178 +650,19 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 307962f2-bc3a-4704-b9ee-90581d7c4a32
-				type = RecoverAsset
-				prestige = 0
-				seed = -1369910045
-				state = Offered
-				viewed = Unseen
-				agent = Vac-Co Advanced Suction Systems
-				deadlineType = Floating
-				expiryType = Floating
-				values = 21386.138677597,45552475.3832817,24343.0190939713,58395.1550746735,25307.0981477738,0,8.321776,9,2620456.23836333,0,0,0
-				targetBody = 1
-				kerbalName = Newise Kerman
-				partName = mk1pod
-				partID = 0
-				recoveryLocation = 1
-				recoveryType = 1
-				PARAM
-				{
-					name = AcquireCrew
-					state = Incomplete
-					values = 5940,0,0,4,0
-					title = Save Newise Kerman
-					winOn = 0
-				}
-				PARAM
-				{
-					name = RecoverKerbal
-					state = Incomplete
-					values = 0,0,0,0,0
-					title = Recover Newise Kerman on Kerbin
-					failOn = All
-					winOn = All
-				}
-			}
-			CONTRACT
-			{
-				guid = 3843fc1a-1af7-4b5b-98b1-1f49968766c6
-				type = SatelliteContract
-				prestige = 0
-				seed = -1369910044
-				state = Offered
-				viewed = Unseen
-				agent = Moving Parts Experts Group
-				deadlineType = Floating
-				expiryType = Floating
-				values = 103816.212123144,88451412.7289184,6593.27981445313,17740.0426951332,6854.39956054688,0,1.849458,0.9615385,2702886.31180888,0,0,0
-				targetBody = 2
-				deviation = 7
-				orbitType = 6
-				placementMode = 1
-				PARAM
-				{
-					name = SpecificVesselParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					TargetBody = 2
-					targetVesselID = 71fa8dbc33454bb7b55c6ce9ee2ffc7f
-					targetVesselPartCount = 18
-					targetVesselName = Integral Satellite
-					targetVesselSituation = ORBITING
-					partIDs = 2764727666|3508432067|782215220|2787443996|3941165904|312558552|1085845426|2104821075|1301722011|3662564376|2623110852|1269379115|621693462|428920522|3700227548|3585797555|2631069260|1393856534
-				}
-				PARAM
-				{
-					name = VesselSystemsParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					typeString = probe
-					mannedStatus = 1
-					requireNew = False
-					checkModuleTypes = Antenna|Generator
-					checkModuleDescriptions = has an antenna|can generate power
-				}
-				PARAM
-				{
-					name = SpecificOrbitParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					TargetBody = 2
-					deviationWindow = 7
-					orbitType = 6
-					inclination = 123.72112194459417
-					eccentricity = 0.18555657293060993
-					sma = 526077.54937543278
-					lan = 357.69245240941848
-					argumentOfPeriapsis = 18.874289829597906
-					meanAnomalyAtEpoch = -2.9805436327042996
-					epoch = 2006378.0385678713
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					holdSeconds = 10
-				}
-			}
-			CONTRACT
-			{
-				guid = 21470ca2-0219-43cd-8279-04fd1b1808a2
-				type = ExplorationContract
-				prestige = 0
-				seed = -1369910043
-				state = Offered
-				viewed = Unseen
-				agent = Kerbin World-Firsts Record-Keeping Society
-				deadlineType = None
-				expiryType = Floating
-				ignoresWeight = True
-				values = 43200,0,3360,6240,3360,1,2,0,2642270.09968574,0,0,0
-				targetBody = 1
-				bodyRatio = 0.857142866
-				PARAM
-				{
-					name = ProgressTrackingParameter
-					state = Incomplete
-					values = 9600,0,1,2,0
-					targetBody = 1
-					targetType = CREWTRANSFER
-				}
-			}
-			CONTRACT
-			{
-				guid = 8aaf3146-ce94-48c3-a7a5-1cabf7a00fde
-				type = RecoverAsset
-				prestige = 1
-				seed = -1369910039
-				state = Offered
-				viewed = Unseen
-				agent = Experimental Engineering Group
-				deadlineType = Floating
-				expiryType = Floating
-				values = 127058.823680878,90211764.8134232,59669.9988842011,149955.300446105,64350.0013947487,0,10.90909,12,2726128.92336662,0,0,0
-				targetBody = 2
-				kerbalName = Wilfurt Kerman
-				partName = Mark1Cockpit
-				partID = 0
-				recoveryLocation = 2
-				recoveryType = 1
-				PARAM
-				{
-					name = AcquireCrew
-					state = Incomplete
-					values = 14850,0,0,5,0
-					title = Save Wilfurt Kerman
-					winOn = 0
-				}
-				PARAM
-				{
-					name = RecoverKerbal
-					state = Incomplete
-					values = 0,0,0,0,0
-					title = Recover Wilfurt Kerman on Kerbin
-					failOn = All
-					winOn = All
-				}
-			}
-			CONTRACT
-			{
-				guid = 24e5e4a6-4b2a-4cb3-908a-b59bb9b25700
+				guid = 4988a15e-8278-4b32-af5e-cc368ddb7ebf
 				type = SatelliteContract
 				prestige = 1
-				seed = -1369910026
+				seed = -1502940091
 				state = Offered
 				viewed = Unseen
 				agent = Integrated Integrals
 				deadlineType = Floating
 				expiryType = Floating
-				values = 63529.4118404388,112764706.016779,51490.3853712173,145138.257199363,57750.0012516975,11,11.34545,6,2662599.51152618,0,0,0
-				targetBody = 3
+				values = 105882.353067398,225529412.033558,118942.790207512,335271.952572931,133402.502891421,15,14.18182,8,3509426.90397054,0,0,0
+				targetBody = 6
 				deviation = 5
-				orbitType = 6
+				orbitType = 0
 				placementMode = 0
 				PARAM
 				{
@@ -752,16 +681,26 @@ GAME
 					name = SpecificOrbitParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					TargetBody = 3
+					TargetBody = 6
 					deviationWindow = 5
-					orbitType = 6
-					inclination = 179.00000000000011
-					eccentricity = 0.15884062871162527
-					sma = 456963.30787025549
-					lan = 74.245613717588412
-					argumentOfPeriapsis = 133.19241582098999
-					meanAnomalyAtEpoch = -1.2731655091915086
+					orbitType = 0
+					inclination = 3.0353158769037734
+					eccentricity = 0.018654981449067264
+					sma = 3199999.910137624
+					lan = 2.6104921114679769
+					argumentOfPeriapsis = 320.10353479539248
+					meanAnomalyAtEpoch = 0.58596752868710267
 					epoch = 0
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					article = a
+					partDescription = mystery goo unit
+					vesselDescription = satellite
+					partNames = GooExperiment
 				}
 				PARAM
 				{
@@ -783,25 +722,136 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = b05bb92d-f377-49a5-b49c-b6184c584124
-				type = StationContract
-				prestige = 1
-				seed = -1369910023
+				guid = d3b0a40e-1451-4c95-8ed4-82728b0fff1d
+				type = PartTest
+				prestige = 0
+				seed = 883071111
 				state = Offered
 				viewed = Unseen
-				agent = Maxo Construction Toys
+				agent = Rockomax Conglomerate
 				deadlineType = Floating
 				expiryType = Floating
-				values = 21600,161028000,107500,278828,107500,0,24,12,2620670.09968574,0,0,0
-				targetBody = 3
-				capacity = 5
+				values = 38631.7921490736,8228571.72775267,7019.35068208838,18425.7947037102,7300.12446570397,2,4.096533,3,3530497.54444532,0,0,0
+				part = smallRadialEngine
+				haul = True
+				dest = 1
+				sit = FLYING
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = smallRadialEngine
+					body = Kerbin
+					situation = FLYING
+					uniqueID = 0.4428381405038937
+					haul = True
+					repeatability = ALWAYS
+				}
+				PARAM
+				{
+					name = ReachDestination
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					dest = 1
+					title = 
+				}
+				PARAM
+				{
+					name = ReachSituation
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					sit = FLYING
+					title = 
+				}
+				PARAM
+				{
+					name = ReachAltitudeEnvelope
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					minAlt = 5000
+					maxAlt = 11000
+				}
+				PARAM
+				{
+					name = ReachSpeedEnvelope
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					minSpd = 250
+					maxSpd = 370
+				}
+			}
+			CONTRACT
+			{
+				guid = 2a5d9a04-850c-47bb-9183-a207d0e7b481
+				type = PlantFlag
+				prestige = 0
+				seed = 883071113
+				state = Offered
+				viewed = Unseen
+				agent = Dinkelstein Kerman's Construction Emporium
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,92016000,47379.9986839294,125453.990818024,49748.9963588715,0,12.62925,6.829268,3513465.75229624,0,0,0
+				body = 2
+				PARAM
+				{
+					name = PlantFlag
+					state = Incomplete
+					values = 0,0,0,0,0
+					body = 2
+				}
+			}
+			CONTRACT
+			{
+				guid = eadeec69-8a2b-46bb-a306-ed4f94546f4c
+				type = ExplorationContract
+				prestige = 0
+				seed = 883071114
+				state = Offered
+				viewed = Unseen
+				agent = Kerbin World-Firsts Record-Keeping Society
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 108000,0,17920,33280,17920,3,6,0,3599865.75229624,0,0,0
+				targetBody = 2
+				bodyRatio = 0.736842096
+				PARAM
+				{
+					name = ProgressTrackingParameter
+					state = Incomplete
+					values = 51200,0,3,6,0
+					targetBody = 2
+					targetType = DOCKING
+				}
+			}
+			CONTRACT
+			{
+				guid = cb299617-f6fc-4813-af5b-845fb30c391f
+				type = BaseContract
+				prestige = 2
+				seed = 883071116
+				state = Offered
+				viewed = Unseen
+				agent = Periapsis Rocket Supplies Co
+				deadlineType = Floating
+				expiryType = Floating
+				values = 86400,322056000,403650,1020338,403650,44,40,27,3578265.75229624,0,0,0
+				targetBody = 6
+				capacity = 7
 				contextual = False
 				PARAM
 				{
 					name = VesselSystemsParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					typeString = station
+					typeString = outpost
 					mannedStatus = 2
 					requireNew = True
 					checkModuleTypes = Antenna|Generator|Dock
@@ -813,16 +863,28 @@ GAME
 					name = CrewCapacityParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					targetCapacity = 5
+					targetCapacity = 7
 				}
 				PARAM
 				{
-					name = CrewTraitParameter
+					name = PartRequestParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					targetTrait = Pilot
-					targetCount = 2
-					vesselDescription = station
+					article = a
+					partDescription = research lab
+					vesselDescription = outpost
+					partNames = Large_Crewed_Lab
+					moduleNames = ModuleScienceLab
+				}
+				PARAM
+				{
+					name = ResourcePossessionParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					goalResource = 6000
+					resourceName = LiquidFuel
+					resourceTitle = liquid fuel
+					vesselName = outpost
 				}
 				PARAM
 				{
@@ -836,27 +898,27 @@ GAME
 					name = LocationAndSituationParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					targetBody = 3
-					targetSituation = ORBITING
-					noun = station
+					targetBody = 6
+					targetSituation = LANDED
+					noun = outpost
 					finalObjective = False
 				}
 			}
 			CONTRACT
 			{
-				guid = e21c1aeb-92a3-4054-8734-030bcb3b645e
+				guid = f2bc80e5-309b-4c4b-862d-895ef6deff86
 				type = SatelliteContract
-				prestige = 1
-				seed = -214383353
+				prestige = 2
+				seed = 883071117
 				state = Offered
 				viewed = Unseen
 				agent = Kerbodyne
 				deadlineType = Floating
 				expiryType = Floating
-				values = 108000,115020000,52500,134531,52500,11,12,6,2708885.74192269,0,0,0
+				values = 21600,115020000,69458,177986,69458,21,18,9,3513465.75229624,0,0,0
 				targetBody = 3
-				deviation = 5
-				orbitType = 3
+				deviation = 3
+				orbitType = 6
 				placementMode = 0
 				PARAM
 				{
@@ -876,14 +938,14 @@ GAME
 					state = Incomplete
 					values = 0,0,0,0,0
 					TargetBody = 3
-					deviationWindow = 5
-					orbitType = 3
-					inclination = 0
-					eccentricity = 0.26120524790006322
-					sma = 190176.51995926807
-					lan = 176.09143984244713
-					argumentOfPeriapsis = 153.27731443333349
-					meanAnomalyAtEpoch = -1.5699316553788938
+					deviationWindow = 3
+					orbitType = 6
+					inclination = 63.998755909483378
+					eccentricity = 0.069873480762508461
+					sma = 620289.34909857216
+					lan = 115.45238965910505
+					argumentOfPeriapsis = 67.975042382243728
+					meanAnomalyAtEpoch = 2.7947219900525013
 					epoch = 0
 				}
 				PARAM
@@ -895,6 +957,26 @@ GAME
 					partDescription = thermometer
 					vesselDescription = satellite
 					partNames = sensorThermometer
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					article = a
+					partDescription = materials bay
+					vesselDescription = satellite
+					partNames = science_module
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					article = a
+					partDescription = mystery goo unit
+					vesselDescription = satellite
+					partNames = GooExperiment
 				}
 				PARAM
 				{
@@ -1648,7 +1730,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 645247.61947940174
+		funds = 1410131.1846430642
 	}
 	SCENARIO
 	{
@@ -1712,6 +1794,23 @@ GAME
 				crew
 				{
 					crews = Jebediah Kerman
+				}
+			}
+			Sun
+			{
+				reached = 3078070.3804147919
+				Orbit
+				{
+					completedUnmanned = 3403574.1309031649
+					vessel
+					{
+						name = Mun II Debris
+						flag = Squad/Flags/default
+					}
+				}
+				Flyby
+				{
+					completedUnmanned = 3078070.3804147919
 				}
 			}
 			Kerbin
@@ -1946,13 +2045,136 @@ GAME
 					}
 				}
 			}
+			Minmus
+			{
+				reached = 2718196.8231772115
+				Orbit
+				{
+					completedManned = 2723500.2963214987
+					vessel
+					{
+						name = Minmus Lander
+						flag = Squad/Flags/default
+					}
+					crew
+					{
+						crews = Bob Kerman
+					}
+				}
+				Escape
+				{
+					completed = 2733347.026175335
+				}
+				Landing
+				{
+					completed = 2789449.9072564822
+					vessel
+					{
+						name = Minmus Lander
+						flag = Squad/Flags/default
+					}
+					crew
+					{
+						crews = Bob Kerman
+					}
+				}
+				Science
+				{
+					completedManned = 3492944.2742754105
+					vessel
+					{
+						name = Minmus Lander
+						flag = Squad/Flags/default
+					}
+					crew
+					{
+						crews = Bob Kerman
+					}
+				}
+				Spacewalk
+				{
+					completed = 2723623.9963216139
+					crew
+					{
+						crews = Bob Kerman
+					}
+				}
+				SurfaceEVA
+				{
+					completed = 2789491.8672565212
+					crew
+					{
+						crews = Bob Kerman
+					}
+				}
+				FlagPlant
+				{
+					completed = 2789509.807256538
+				}
+				ReturnFromOrbit
+				{
+					completedManned = 3492932.5430412698
+					vessel
+					{
+						name = Minmus Lander
+						flag = Squad/Flags/default
+					}
+					crew
+					{
+						crews = Bob Kerman
+					}
+				}
+				Suborbit
+				{
+					completedManned = 2723712.7963216966
+					vessel
+					{
+						name = Bob Kerman
+						flag = Squad/Flags/default
+					}
+					crew
+					{
+						crews = Bob Kerman
+					}
+				}
+				Flyby
+				{
+					completedManned = 2718196.8231772115
+				}
+				ReturnFromFlyBy
+				{
+					completedManned = 3492932.5430412698
+					vessel
+					{
+						name = Minmus Lander
+						flag = Squad/Flags/default
+					}
+					crew
+					{
+						crews = Bob Kerman
+					}
+				}
+				ReturnFromSurface
+				{
+					completedManned = 3492932.5430412698
+					vessel
+					{
+						name = Minmus Lander
+						flag = Squad/Flags/default
+					}
+					crew
+					{
+						crews = Bob Kerman
+					}
+				}
+			}
 		}
 	}
 	SCENARIO
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 325.121216
+		sci = 1431.62122
 		Tech
 		{
 			id = start
@@ -2259,6 +2481,15 @@ GAME
 			cost = 160
 			part = Size2LFB
 			part = liquidEngine1-2
+		}
+		Tech
+		{
+			id = advExploration
+			state = Available
+			cost = 160
+			part = telescopicLadderBay
+			part = telescopicLadder
+			part = Large.Crewed.Lab
 		}
 		Science
 		{
@@ -3095,9 +3326,9 @@ GAME
 			id = mobileMaterialsLab@KerbinInSpaceLow
 			title = Materials Study while in space near Kerbin
 			dsc = 1
-			scv = 1
+			scv = 0.21875
 			sbv = 1
-			sci = 0
+			sci = 25
 			cap = 32
 		}
 		Science
@@ -3283,12 +3514,262 @@ GAME
 		Science
 		{
 			id = recovery@MunOrbited
-			title = Recovery of a vessel returned from orbit around Mun
+			title = Recovery of a vessel returned from orbit around The Mun
 			dsc = 1
 			scv = 0.166666701
 			sbv = 16
 			sci = 16
 			cap = 19.2000008
+		}
+		Science
+		{
+			id = evaReport@KerbinInSpaceLowWater
+			title = EVA Report from space just above Kerbin's Water
+			dsc = 1
+			scv = 0
+			sbv = 1
+			sci = 8
+			cap = 8
+		}
+		Science
+		{
+			id = crewReport@KerbinInSpaceLow
+			title = Crew Report while in space near Kerbin
+			dsc = 1
+			scv = 1
+			sbv = 1
+			sci = 0
+			cap = 5
+		}
+		Science
+		{
+			id = mobileMaterialsLab@MinmusInSpaceHigh
+			title = Materials Study while in space high over Minmus
+			dsc = 1
+			scv = 0.21875
+			sbv = 2.5
+			sci = 62.5
+			cap = 80
+		}
+		Science
+		{
+			id = barometerScan@MinmusInSpaceHigh
+			title = Atmospheric Pressure Scan while in space high over Minmus
+			dsc = 1
+			scv = 0
+			sbv = 2.5
+			sci = 30
+			cap = 30
+		}
+		Science
+		{
+			id = temperatureScan@MinmusInSpaceHigh
+			title = Temperature Scan while in space high over Minmus
+			dsc = 1
+			scv = 0
+			sbv = 2.5
+			sci = 20
+			cap = 20
+		}
+		Science
+		{
+			id = mysteryGoo@MinmusInSpaceHigh
+			title = Mystery Goo™ Observation while in space high over Minmus
+			dsc = 1
+			scv = 0.230769232
+			sbv = 2.5
+			sci = 25
+			cap = 32.5
+		}
+		Science
+		{
+			id = crewReport@MinmusInSpaceHigh
+			title = Crew Report while in space high over Minmus
+			dsc = 1
+			scv = 0
+			sbv = 2.5
+			sci = 12.5
+			cap = 12.5
+		}
+		Science
+		{
+			id = evaReport@MinmusInSpaceHigh
+			title = EVA Report while in space high over Minmus
+			dsc = 1
+			scv = 0
+			sbv = 2.5
+			sci = 20
+			cap = 20
+		}
+		Science
+		{
+			id = mobileMaterialsLab@MinmusInSpaceLow
+			title = Materials Study while in space near Minmus
+			dsc = 1
+			scv = 0.21875
+			sbv = 4
+			sci = 100
+			cap = 128
+		}
+		Science
+		{
+			id = mysteryGoo@MinmusInSpaceLow
+			title = Mystery Goo™ Observation while in space near Minmus
+			dsc = 1
+			scv = 0.230769232
+			sbv = 4
+			sci = 40
+			cap = 52
+		}
+		Science
+		{
+			id = temperatureScan@MinmusInSpaceLow
+			title = Temperature Scan while in space near Minmus
+			dsc = 1
+			scv = 0
+			sbv = 4
+			sci = 32
+			cap = 32
+		}
+		Science
+		{
+			id = barometerScan@MinmusInSpaceLow
+			title = Atmospheric Pressure Scan while in space near Minmus
+			dsc = 1
+			scv = 0
+			sbv = 4
+			sci = 48
+			cap = 48
+		}
+		Science
+		{
+			id = evaReport@MinmusInSpaceLowLesserFlats
+			title = EVA Report from space just above Minmus' Lesser Flats
+			dsc = 1
+			scv = 0
+			sbv = 4
+			sci = 32
+			cap = 32
+		}
+		Science
+		{
+			id = evaReport@MinmusInSpaceLowLowlands
+			title = EVA Report from space just above Minmus' Lowlands
+			dsc = 1
+			scv = 0
+			sbv = 4
+			sci = 32
+			cap = 32
+		}
+		Science
+		{
+			id = evaReport@MinmusInSpaceLowSlopes
+			title = EVA Report from space just above Minmus' Slopes
+			dsc = 1
+			scv = 0
+			sbv = 4
+			sci = 32
+			cap = 32
+		}
+		Science
+		{
+			id = evaReport@MinmusInSpaceLowMidlands
+			title = EVA Report from space just above Minmus' Midlands
+			dsc = 1
+			scv = 0
+			sbv = 4
+			sci = 32
+			cap = 32
+		}
+		Science
+		{
+			id = mobileMaterialsLab@MinmusSrfLandedGreatFlats
+			title = Materials Study from Minmus' Great Flats
+			dsc = 1
+			scv = 0.21875
+			sbv = 5
+			sci = 125
+			cap = 160
+		}
+		Science
+		{
+			id = barometerScan@MinmusSrfLandedGreatFlats
+			title = Atmospheric Pressure Scan from Minmus' Great Flats
+			dsc = 1
+			scv = 0
+			sbv = 5
+			sci = 60
+			cap = 60
+		}
+		Science
+		{
+			id = temperatureScan@MinmusSrfLandedGreatFlats
+			title = Temperature Scan from Minmus' Great Flats
+			dsc = 1
+			scv = 0
+			sbv = 5
+			sci = 40
+			cap = 40
+		}
+		Science
+		{
+			id = mysteryGoo@MinmusSrfLandedGreatFlats
+			title = Mystery Goo™ Observation from Minmus' Great Flats
+			dsc = 1
+			scv = 0.230769232
+			sbv = 5
+			sci = 50
+			cap = 65
+		}
+		Science
+		{
+			id = evaReport@MinmusSrfLandedGreatFlats
+			title = EVA Report from Minmus' Great Flats
+			dsc = 1
+			scv = 0
+			sbv = 5
+			sci = 40
+			cap = 40
+		}
+		Science
+		{
+			id = surfaceSample@MinmusSrfLandedGreatFlats
+			title = Surface Sample from Minmus' Great Flats
+			dsc = 1
+			scv = 0.25
+			sbv = 5
+			sci = 150
+			cap = 200
+		}
+		Science
+		{
+			id = evaReport@MinmusSrfLandedLowlands
+			title = EVA Report from Minmus' Lowlands
+			dsc = 1
+			scv = 0
+			sbv = 5
+			sci = 40
+			cap = 40
+		}
+		Science
+		{
+			id = surfaceSample@MinmusSrfLandedLowlands
+			title = Surface Sample from Minmus' Lowlands
+			dsc = 1
+			scv = 0.25
+			sbv = 5
+			sci = 150
+			cap = 200
+		}
+		Science
+		{
+			id = recovery@MinmusSurfaced
+			title = Recovery of a vessel returned from the surface of Minmus
+			dsc = 1
+			scv = 0.166666672
+			sbv = 37.5
+			sci = 37.5
+			cap = 45
 		}
 	}
 	SCENARIO
@@ -3300,7 +3781,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 378.410919
+		rep = 423.524902
 	}
 	SCENARIO
 	{
@@ -3569,7 +4050,7 @@ GAME
 	{
 		name = ScenarioDiscoverableObjects
 		scene = 7, 8, 5
-		lastSeed = 1526344605
+		lastSeed = 291611369
 		sizeCurve
 		{
 			key = 0 0 1.5 1.5
@@ -3627,12 +4108,12 @@ GAME
 	{
 		name = SentinelScenario
 		scene = 7, 8, 5
-		NextSpawnTime = 2619289.6076927278
+		NextSpawnTime = 3506549.5647997926
 	}
 	FLIGHTSTATE
 	{
 		version = 1.4.5
-		UT = 2600907.8819227079
+		UT = 3492968.2342754328
 		activeVessel = 0
 		mapViewFiltering = 16382
 		commNetUIModeTracking = Network
@@ -5554,14 +6035,14 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 15404893.217628391
-				ECC = 0.20309595918485981
-				INC = 32.898756853710914
-				LPE = 146.79213216412558
-				LAN = 189.09697807292315
-				MNA = 0.5361618624439084
-				EPH = 667923.94638123608
-				REF = 1
+				SMA = 12736881059.328545
+				ECC = 0.06994609915467398
+				INC = 0.22890375018071105
+				LPE = 350.97563485822008
+				LAN = 103.48084447136193
+				MNA = -2.6297480133687032
+				EPH = 3078004.794157811
+				REF = 0
 			}
 			PART
 			{
@@ -6059,14 +6540,14 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 8033125.155386366
-				ECC = 0.50488432503146374
-				INC = 29.315076627095205
-				LPE = 173.41279136444709
-				LAN = 35.104594159874239
-				MNA = -2.8986751892055338
-				EPH = 1925776.1210666297
-				REF = 1
+				SMA = 12697569107.508839
+				ECC = 0.079160003600986004
+				INC = 0.072855254743838416
+				LPE = 35.962301376789959
+				LAN = 67.86961687224175
+				MNA = -2.5155593580177724
+				EPH = 3454018.6344766621
+				REF = 0
 			}
 			PART
 			{
@@ -6972,13 +7453,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 100923.12569304529
-				ECC = 0.99999999999999989
-				INC = 0.43627025540919173
+				SMA = 0
+				ECC = 1
+				INC = 0.4362702554075209
 				LPE = 270
-				LAN = 246.38014977459551
-				MNA = 3.1415926207170166
-				EPH = 2600885.1819226868
+				LAN = 37.007283284774758
+				MNA = 0
+				EPH = 3492943.7142754099
 				REF = 2
 			}
 			PART
@@ -7853,13 +8334,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
-				ECC = 1
-				INC = 40.852421201096398
-				LPE = 90.000000000000014
-				LAN = 215.94168014166598
-				MNA = 0
-				EPH = 2600885.1819226868
+				SMA = 101868.27014377626
+				ECC = 0.99999999999999989
+				INC = 40.85242120109644
+				LPE = 90
+				LAN = 6.5688136518452325
+				MNA = 3.1415926207170166
+				EPH = 3492943.7142754099
 				REF = 2
 			}
 			PART
@@ -14727,13 +15208,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
-				ECC = 1
-				INC = 85.875171705999037
+				SMA = 102923.85942685977
+				ECC = 0.99999999999999989
+				INC = 85.875171705998739
 				LPE = 270
-				LAN = 274.71718680385698
-				MNA = 0
-				EPH = 2600885.1819226868
+				LAN = 65.344320314036111
+				MNA = -3.1415926207170166
+				EPH = 3492943.7142754099
 				REF = 2
 			}
 			PART
@@ -22305,312 +22786,6 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 2f3495d52be44d60a56bed21b38b860b
-			persistentId = 1895110653
-			name = Ast. OSL-564
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			skipGroundPositioning = False
-			vesselSpawning = True
-			launchedFrom = 
-			landedAt = 
-			displaylandedAt = 
-			splashed = False
-			met = 2006626.8266052117
-			lct = 2006626.8266052117
-			lastUT = -1
-			distanceTraveled = 0
-			root = 0
-			lat = -0.2052782250504841
-			lon = 46.983897737563154
-			alt = 17152922260.567245
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.665796578,-0.1903072,-0.270561516,0.668800771
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			PQSMin = 0
-			PQSMax = 0
-			ORBIT
-			{
-				SMA = 15860052628.35272
-				ECC = 0.14359219776816534
-				INC = 0.34001695467558773
-				LPE = 355.93772237359082
-				LAN = 62.035779309732163
-				MNA = 0.083557933204839313
-				EPH = 6250759.5292419307
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 1320640306
-				mid = 1320640306
-				persistentId = 3921066160
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				resPri = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				expt = 0.100000001
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 2006626.8266052117
-				lifetime = 1447564.1967773438
-				refTime = 1728000
-				size = 3
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-			}
-		}
-		VESSEL
-		{
-			pid = d6b44fedf3294024be7c8cce1a17e794
-			persistentId = 1626033445
-			name = Ast. QOK-312
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			skipGroundPositioning = False
-			vesselSpawning = True
-			launchedFrom = 
-			landedAt = 
-			displaylandedAt = 
-			splashed = False
-			met = 2006634.3466052187
-			lct = 2006634.3466052187
-			lastUT = -1
-			distanceTraveled = 0
-			root = 0
-			lat = 0.88151258235615337
-			lon = 26.77186631914503
-			alt = 13774727211.657015
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.392484814,0.0636087582,0.596950173,0.696821511
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			PQSMin = 0
-			PQSMax = 0
-			ORBIT
-			{
-				SMA = 14001228564.025259
-				ECC = 0.030273609225646717
-				INC = 0.88799419929016599
-				LPE = 193.40317036485544
-				LAN = 162.03970831588435
-				MNA = -0.05854127490753621
-				EPH = 4401241.1764392033
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 1018453286
-				mid = 1018453286
-				persistentId = 1129138097
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				resPri = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				expt = 0.100000001
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 2006634.3466052187
-				lifetime = 857116.76330566406
-				refTime = 1728000
-				size = 1
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-			}
-		}
-		VESSEL
-		{
-			pid = c6410acc3eb34b3db70e05d4afd89048
-			persistentId = 2703441778
-			name = Ast. PHS-622
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			skipGroundPositioning = False
-			vesselSpawning = True
-			launchedFrom = 
-			landedAt = 
-			displaylandedAt = 
-			splashed = False
-			met = 2006649.4702673396
-			lct = 2006649.4702673396
-			lastUT = -1
-			distanceTraveled = 0
-			root = 0
-			lat = -0.41635674853925408
-			lon = 58.066671402976567
-			alt = 17031062993.841198
-			hgt = -1
-			nrm = 0,1,0
-			rot = 0.341982365,0.273056328,0.859691381,0.263474703
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			PQSMin = 0
-			PQSMax = 0
-			ORBIT
-			{
-				SMA = 15433204546.618694
-				ECC = 0.12430055095585833
-				INC = 0.74237720037673327
-				LPE = 21.53809679113586
-				LAN = 76.161963928774981
-				MNA = -0.22814353140724214
-				EPH = 6671614.3506384334
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 1496169109
-				mid = 1496169109
-				persistentId = 3367998416
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				resPri = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				expt = 0.100000001
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 2006649.4702673396
-				lifetime = 1294984.86328125
-				refTime = 1728000
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-			}
-		}
-		VESSEL
-		{
 			pid = b19534937bba4c9aacae94175e1ffd1c
 			persistentId = 4005943592
 			name = Mun IV Debris
@@ -23546,11 +23721,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 82.121812099718724
+				INC = 82.121812099718554
 				LPE = 270
-				LAN = 219.60876413259757
+				LAN = 10.235897642779037
 				MNA = 0
-				EPH = 2600885.1819226868
+				EPH = 3492943.7142754099
 				REF = 2
 			}
 			PART
@@ -33207,13 +33382,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 100512.54330612563
-				ECC = 0.99999999999999989
-				INC = 6.7429042225010187
+				SMA = NaN
+				ECC = 1
+				INC = 6.7429042225011271
 				LPE = 90
-				LAN = 113.95500256264512
-				MNA = 3.1415926207170166
-				EPH = 2600885.1819226868
+				LAN = 264.5821360728242
+				MNA = 0
+				EPH = 3492943.7142754099
 				REF = 2
 			}
 			PART
@@ -36798,9 +36973,1700 @@ GAME
 		}
 		VESSEL
 		{
-			pid = fb4ae23b44114ed1a686d0d35a8722cc
-			persistentId = 1605353392
-			name = Ast. QXQ-308
+			pid = bed967d3f00f4faab6da974d7ceedd02
+			persistentId = 3846424868
+			name = Minmus Lander Debris
+			type = Debris
+			sit = FLYING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = LaunchPad
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 484.16193505516276
+			lct = 2601456.7555016805
+			lastUT = 2601940.9174367357
+			distanceTraveled = 466938.61483181413
+			root = 0
+			lat = 0.11624394408685106
+			lon = 57.207970889409715
+			alt = 60016.816413890803
+			hgt = 60016.8164
+			nrm = -0.188724443,0.0234663785,0.981749713
+			rot = 0.397960335,-0.460435897,0.623784661,-0.490427494
+			CoM = -0.000108599037,-4.18179846,0.000698564458
+			stg = 4
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 10
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 660920.10703119286
+				ECC = 0.031530697516844668
+				INC = 0.11903323170420765
+				LPE = 191.68172412559051
+				LAN = 312.31423211714571
+				MNA = -2.3612295665088383
+				EPH = 2601693.5555019011
+				REF = 1
+			}
+			PART
+			{
+				name = fuelTank
+				cid = 4293288064
+				uid = 1169247029
+				mid = 4002110321
+				persistentId = 4282541491
+				launchID = 47
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 8
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 0
+				srfN = srfAttach, -1
+				attN = top, -1
+				attN = bottom, 1
+				mass = 0.25
+				shielded = False
+				temp = 322.61716393199731
+				tempExt = 319.96974062138486
+				tempExtUnexp = 319.95290601620127
+				expt = 0.5
+				state = 1
+				attached = False
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = fuelTank
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 0.0036472081278873247
+					maxAmount = 180
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 0.0044471026324153229
+					maxAmount = 220
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = fuelTank
+				cid = 4293286000
+				uid = 3596928921
+				mid = 4002110321
+				persistentId = 2466928691
+				launchID = 47
+				parent = 0
+				position = 0,-1.8942251205444336,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 8
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 0
+				srfN = srfAttach, -1
+				attN = top, 0
+				attN = bottom, 2
+				mass = 0.25
+				shielded = False
+				temp = 323.0293417234563
+				tempExt = 320.05629871716587
+				tempExtUnexp = 320.03966628058481
+				expt = 0.5
+				state = 1
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = fuelTank
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 0.0036472081278873247
+					maxAmount = 180
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 0.0044471026324153229
+					maxAmount = 220
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = fuelTank
+				cid = 4293284502
+				uid = 2212336421
+				mid = 4002110321
+				persistentId = 3149603360
+				launchID = 47
+				parent = 1
+				position = 0,-3.7884492874145508,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 8
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 0
+				srfN = srfAttach, -1
+				attN = top, 1
+				attN = bottom, 3
+				mass = 0.25
+				shielded = False
+				temp = 323.80825274117512
+				tempExt = 318.57478700661579
+				tempExtUnexp = 318.55104593036287
+				expt = 0.5
+				state = 1
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = fuelTank
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 0.0036472081278873247
+					maxAmount = 180
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 0.0044471026324153229
+					maxAmount = 220
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = liquidEngine
+				cid = 4293090988
+				uid = 2583045429
+				mid = 4002110321
+				persistentId = 3752609064
+				launchID = 47
+				parent = 2
+				position = 0,-5.6027774810791016,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 4
+				resPri = 0
+				dstg = 8
+				sqor = 4
+				sepI = -1
+				sidx = 0
+				attm = 0
+				srfN = , -1
+				attN = top, 2
+				attN = bottom, -1
+				mass = 1.25
+				shielded = False
+				temp = 326.68474646549453
+				tempExt = 322.82581148098177
+				tempExtUnexp = 322.81982983223861
+				expt = 0.5
+				state = 1
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = liquidEngine
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleEngines
+					isEnabled = True
+					staged = True
+					flameout = True
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 0
+					thrustPercentage = 100
+					manuallyOverridden = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleJettison
+					isEnabled = True
+					activejettisonName = fairing
+					isJettisoned = True
+					shroudHideOverride = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						JettisonAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FXModuleAnimateThrottle
+					isEnabled = True
+					animState = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAlternator
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSurfaceFX
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = R8winglet
+				cid = 4294418414
+				uid = 549229336
+				mid = 4002110321
+				persistentId = 1672719706
+				launchID = 47
+				parent = 2
+				position = -0.8352399468421936,-3.8299589157104492,-0.83524000644683838
+				rotation = 5.70242076E-09,0.382683456,-1.37668623E-08,-0.923879623
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 8
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sym = 5
+				sym = 6
+				sym = 7
+				srfN = srfAttach, 2
+				mass = 0.100000001
+				shielded = False
+				temp = 324.9035652311336
+				tempExt = 316.791142429503
+				tempExtUnexp = 316.75575435523251
+				expt = 0.100000001
+				state = 1
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = R8winglet
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleControlSurface
+					isEnabled = True
+					mirrorDeploy = False
+					usesMirrorDeploy = True
+					ignorePitch = False
+					ignoreYaw = False
+					ignoreRoll = False
+					deploy = False
+					deployInvert = False
+					partDeployInvert = False
+					authorityLimiter = 100
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = None
+						}
+						ActionExtend
+						{
+							actionGroup = None
+						}
+						ActionRetract
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = R8winglet
+				cid = 4294417142
+				uid = 3370532194
+				mid = 4002110321
+				persistentId = 3392687951
+				launchID = 47
+				parent = 2
+				position = -0.83524000644683838,-3.8299589157104492,0.83523976802825928
+				rotation = -5.70242076E-09,-0.382683456,-1.37668605E-08,-0.923879564
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 8
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sym = 4
+				sym = 6
+				sym = 7
+				srfN = srfAttach, 2
+				mass = 0.100000001
+				shielded = False
+				temp = 325.20785509684413
+				tempExt = 316.65375295818336
+				tempExtUnexp = 316.61831154846152
+				expt = 0.100000001
+				state = 1
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = R8winglet
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleControlSurface
+					isEnabled = True
+					mirrorDeploy = False
+					usesMirrorDeploy = True
+					ignorePitch = False
+					ignoreYaw = False
+					ignoreRoll = False
+					deploy = False
+					deployInvert = False
+					partDeployInvert = False
+					authorityLimiter = 100
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = None
+						}
+						ActionExtend
+						{
+							actionGroup = None
+						}
+						ActionRetract
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = R8winglet
+				cid = 4294417098
+				uid = 3046280191
+				mid = 4002110321
+				persistentId = 3009777435
+				launchID = 47
+				parent = 2
+				position = 0.83524000644683838,-3.8299589157104492,0.83524000644683838
+				rotation = -1.37668623E-08,-0.923879623,-5.70242031E-09,-0.382683426
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 8
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sym = 4
+				sym = 5
+				sym = 7
+				srfN = srfAttach, 2
+				mass = 0.100000001
+				shielded = False
+				temp = 325.24839949183564
+				tempExt = 316.72100993237063
+				tempExtUnexp = 316.68531441744244
+				expt = 0.100000001
+				state = 1
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = R8winglet
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleControlSurface
+					isEnabled = True
+					mirrorDeploy = False
+					usesMirrorDeploy = True
+					ignorePitch = False
+					ignoreYaw = False
+					ignoreRoll = False
+					deploy = False
+					deployInvert = False
+					partDeployInvert = False
+					authorityLimiter = 100
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = None
+						}
+						ActionExtend
+						{
+							actionGroup = None
+						}
+						ActionRetract
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = R8winglet
+				cid = 4294417054
+				uid = 694120256
+				mid = 4002110321
+				persistentId = 3888629280
+				launchID = 47
+				parent = 2
+				position = 0.83523988723754883,-3.8299589157104492,-0.8352399468421936
+				rotation = -1.37668605E-08,-0.923879564,5.70242076E-09,0.382683456
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 8
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sym = 4
+				sym = 5
+				sym = 6
+				srfN = srfAttach, 2
+				mass = 0.100000001
+				shielded = False
+				temp = 324.9188238459929
+				tempExt = 316.78241057152172
+				tempExtUnexp = 316.74686622597926
+				expt = 0.100000001
+				state = 1
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = R8winglet
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleControlSurface
+					isEnabled = True
+					mirrorDeploy = False
+					usesMirrorDeploy = True
+					ignorePitch = False
+					ignoreYaw = False
+					ignoreRoll = False
+					deploy = False
+					deployInvert = False
+					partDeployInvert = False
+					authorityLimiter = 100
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = None
+						}
+						ActionExtend
+						{
+							actionGroup = None
+						}
+						ActionRetract
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 2601147.86192293
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 2601043.28192283
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 61596f9879464071a814e2a2756ecc97
+			persistentId = 1023504914
+			name = Minmus Lander Debris
+			type = Debris
+			sit = FLYING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = LaunchPad
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 674.77385905012488
+			lct = 2601456.7555016805
+			lastUT = 2602131.5293607307
+			distanceTraveled = 706433.40713662643
+			root = 0
+			lat = 0.078467562324635323
+			lon = 90.470992008622332
+			alt = 66985.727121339878
+			hgt = 66985.7266
+			nrm = 0.0133769652,0.932383537,-0.361223578
+			rot = -0.213645265,0.201716527,0.670966446,-0.68078661
+			CoM = 0,0,0
+			stg = 3
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 10
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 671049.64523469971
+				ECC = 0.016945480089899406
+				INC = 0.11910967305776418
+				LPE = 208.76264957600299
+				LAN = 312.32032026054867
+				MNA = -2.6867798030472034
+				EPH = 2601693.5555019011
+				REF = 1
+			}
+			PART
+			{
+				name = Separator.1
+				cid = 4293744312
+				uid = 3930603413
+				mid = 4002110321
+				persistentId = 469113122
+				launchID = 47
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 3
+				resPri = 0
+				dstg = 7
+				sqor = 3
+				sepI = 3
+				sidx = 1
+				attm = 0
+				srfN = , -1
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0500000007
+				shielded = False
+				temp = 303.21531294537488
+				tempExt = 370.18688574087088
+				tempExtUnexp = 303.53428699332193
+				expt = 0.5
+				state = 1
+				attached = False
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = Separator.1
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					ejectionForcePercent = 100
+					isDecoupled = True
+					stagingEnabled = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleToggleCrossfeed
+					isEnabled = True
+					crossfeedStatus = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						EnableAction
+						{
+							actionGroup = None
+						}
+						DisableAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 2601147.86192293
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 2601043.28192283
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = ac78f6fe7bf946f3b3d2bfc8de367ad3
+			persistentId = 65969029
+			name = Minmus Lander Debris
+			type = Debris
+			sit = ESCAPING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = LaunchPad
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 24.720000023022294
+			lct = 2723491.4763214905
+			lastUT = 2723516.1963215135
+			distanceTraveled = 3402.7129023332091
+			root = 0
+			lat = 3.6440273286756093
+			lon = -163.38489362367346
+			alt = 1680001.6500915021
+			hgt = -1
+			nrm = -0.0580755621,-0.035394758,-0.997684717
+			rot = -0.449896157,-0.413753599,-0.508996785,-0.606072426
+			CoM = -8.04660067E-06,-2.91032815,-0.00010824186
+			stg = 3
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 7
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 29127851.672854237
+				ECC = 0.67841527974194826
+				INC = 6.0193738290308749
+				LPE = 113.49298239643159
+				LAN = 77.780958249123159
+				MNA = 2.3019705614052279
+				EPH = 2733281.2511862069
+				REF = 1
+			}
+			PART
+			{
+				name = advSasModule
+				cid = 4293942426
+				uid = 1024738791
+				mid = 4002110321
+				persistentId = 3291028042
+				launchID = 47
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 6
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				attN = top, -1
+				attN = bottom, 1
+				mass = 0.100000001
+				shielded = False
+				temp = 189.6265761648616
+				tempExt = 190.42867210176141
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 1
+				attached = False
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = advSasModule
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					actuatorModeCycle = 0
+					authorityLimiter = 100
+					stateString = Idle
+					stagingEnabled = True
+					WheelState = Active
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						CycleAction
+						{
+							actionGroup = None
+						}
+						Activate
+						{
+							actionGroup = None
+						}
+						Deactivate
+						{
+							actionGroup = None
+						}
+						Toggle
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = fuelTank
+				cid = 4293767642
+				uid = 3775530950
+				mid = 4002110321
+				persistentId = 2212975726
+				launchID = 47
+				parent = 0
+				position = 0,-1.180750846862793,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 6
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 0
+				srfN = srfAttach, -1
+				attN = top, 0
+				attN = bottom, 2
+				mass = 0.25
+				shielded = False
+				temp = 189.66970443821526
+				tempExt = 190.05738267601086
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 1
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = fuelTank
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 0
+					maxAmount = 180
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 0
+					maxAmount = 220
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = fuelTank
+				cid = 4293766430
+				uid = 2564811074
+				mid = 4002110321
+				persistentId = 4233793957
+				launchID = 47
+				parent = 1
+				position = 0,-3.0749759674072266,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 6
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 0
+				srfN = srfAttach, -1
+				attN = top, 1
+				attN = bottom, 3
+				mass = 0.25
+				shielded = False
+				temp = 190.42156004417254
+				tempExt = 190.76384821751279
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 1
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = fuelTank
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 0
+					maxAmount = 180
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 0
+					maxAmount = 220
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = liquidEngine3
+				cid = 4293753032
+				uid = 480195194
+				mid = 4002110321
+				persistentId = 2573191131
+				launchID = 47
+				parent = 2
+				position = 0,-4.2749767303466797,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 3
+				resPri = 0
+				dstg = 6
+				sqor = 3
+				sepI = -1
+				sidx = 0
+				attm = 0
+				srfN = , -1
+				attN = top, 2
+				attN = bottom, -1
+				mass = 0.5
+				shielded = False
+				temp = 193.68767250706898
+				tempExt = 192.37265098086417
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 1
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = liquidEngine3
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleEngines
+					isEnabled = True
+					staged = True
+					flameout = True
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 0
+					thrustPercentage = 100
+					manuallyOverridden = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleGimbal
+					isEnabled = True
+					gimbalLock = False
+					gimbalLimiter = 100
+					currentShowToggles = False
+					enableYaw = True
+					enablePitch = True
+					enableRoll = True
+					gimbalActive = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						LockAction
+						{
+							actionGroup = None
+						}
+						FreeAction
+						{
+							actionGroup = None
+						}
+						TogglePitchAction
+						{
+							actionGroup = None
+						}
+						ToggleYawAction
+						{
+							actionGroup = None
+						}
+						ToggleRollAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FXModuleAnimateThrottle
+					isEnabled = True
+					animState = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleJettison
+					isEnabled = True
+					activejettisonName = fairing
+					isJettisoned = True
+					shroudHideOverride = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						JettisonAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSurfaceFX
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 2601456.75550168
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 2601043.28192283
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 43526f194bdc46f2a38fc73a2db011aa
+			persistentId = 3525284210
+			name = Minmus Lander Debris
+			type = Debris
+			sit = ESCAPING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = LaunchPad
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 32.280000030063093
+			lct = 2723491.4763214905
+			lastUT = 2723523.7563215205
+			distanceTraveled = 3494.4716118161796
+			root = 0
+			lat = 3.6437505960246308
+			lon = -163.44866190775073
+			alt = 1680005.3965165929
+			hgt = -1
+			nrm = -0.0582158864,-0.0337819159,-0.997732341
+			rot = -0.450353026,-0.413051486,-0.509925187,-0.605431259
+			CoM = 0,0,0
+			stg = 2
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 7
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 30713657.973243408
+				ECC = 0.56382193029962502
+				INC = 6.0188611715429605
+				LPE = 114.92912447325783
+				LAN = 77.819353046433491
+				MNA = 2.4593562039463919
+				EPH = 2736121.8723476678
+				REF = 1
+			}
+			PART
+			{
+				name = Separator.1
+				cid = 4294150530
+				uid = 3481802859
+				mid = 4002110321
+				persistentId = 1108735127
+				launchID = 47
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 2
+				resPri = 0
+				dstg = 5
+				sqor = 2
+				sepI = 2
+				sidx = 1
+				attm = 0
+				srfN = , -1
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.0500000007
+				shielded = False
+				temp = 178.6584617842089
+				tempExt = 179.44362531708273
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 1
+				attached = False
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = Separator.1
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					ejectionForcePercent = 100
+					isDecoupled = True
+					stagingEnabled = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleToggleCrossfeed
+					isEnabled = True
+					crossfeedStatus = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						EnableAction
+						{
+							actionGroup = None
+						}
+						DisableAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 2601456.75550168
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 2601043.28192283
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 3ec5201f01e24e928b66db2cbd208ef8
+			persistentId = 1823304518
+			name = Ast. MHY-932
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
@@ -36810,17 +38676,17 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 2599429.4635431934
-			lct = 2599429.4635431934
+			met = 2779547.026175335
+			lct = 2779547.026175335
 			lastUT = -1
 			distanceTraveled = 0
 			root = 0
-			lat = 0.22535456909852866
-			lon = -83.752727134355794
-			alt = 13768980882.006191
+			lat = 1.9369139930832227
+			lon = 135.11973551152573
+			alt = 14490352815.919172
 			hgt = -1
 			nrm = 0,1,0
-			rot = 0.32644248,-0.432341069,0.321835309,0.776491165
+			rot = -0.626497328,0.509991646,0.55620873,0.195042104
 			CoM = 0,0,0
 			stg = 0
 			prst = False
@@ -36830,22 +38696,22 @@ GAME
 			PQSMax = 0
 			ORBIT
 			{
-				SMA = 13784276796.654245
-				ECC = 0.021541550289593241
-				INC = 0.88322319581029407
-				LPE = 311.94656289720456
-				LAN = 117.21985781759361
-				MNA = 0.75888876398868454
-				EPH = 7525690.5353205372
+				SMA = 14750189709.671457
+				ECC = 0.078815893176388929
+				INC = 1.9926995804454939
+				LPE = 198.19375674122401
+				LAN = 187.81437600839962
+				MNA = -0.19942529645721624
+				EPH = 4920609.4529331475
 				REF = 0
 			}
 			PART
 			{
 				name = PotatoRoid
 				cid = 0
-				uid = 141217792
-				mid = 141217792
-				persistentId = 341091153
+				uid = 1752886420
+				mid = 1752886420
+				persistentId = 2443617905
 				launchID = 0
 				parent = 0
 				position = 0,0,0
@@ -36880,10 +38746,10 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 2599429.4635431934
-				lifetime = 156035.35079956055
+				lastObservedTime = 2779547.026175335
+				lifetime = 811444.67468261719
 				refTime = 1728000
-				size = 0
+				size = 1
 			}
 			FLIGHTPLAN
 			{
@@ -36900,9 +38766,353 @@ GAME
 		}
 		VESSEL
 		{
-			pid = bd8bf989a0e440348683bf6eb2e3e375
-			persistentId = 1761266279
-			name = Ast. OOV-882
+			pid = 00000000000000000000000000000000
+			persistentId = 93079254
+			name = First Minmus Landing
+			type = Flag
+			sit = LANDED
+			landed = True
+			skipGroundPositioning = True
+			vesselSpawning = False
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 515.26000047987327
+			lct = 2789509.807256538
+			lastUT = 2790025.0672570178
+			distanceTraveled = 57.904878773168214
+			root = 0
+			lat = 4.7586465879910547
+			lon = -103.90407430434412
+			alt = 0.37173439683829201
+			hgt = 0.381494075
+			nrm = 0.00551342964,0.997657955,-0.0681755543
+			rot = -0.31914261,0.690697491,-0.616040111,0.203910708
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 7
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = NaN
+				ECC = 1
+				INC = 4.7586465879909472
+				LPE = 270
+				LAN = 201.33694399139418
+				MNA = 0
+				EPH = 3492943.7142754099
+				REF = 3
+			}
+			PART
+			{
+				name = flag
+				cid = 4294199558
+				uid = 2800357312
+				mid = 4002110321
+				persistentId = 890359117
+				launchID = 47
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				mass = 0.00999999978
+				shielded = False
+				temp = 4
+				tempExt = 4
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = flag (First Minmus Landing)
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = FlagSite
+					isEnabled = True
+					placedBy = Bob Kerman
+					PlaqueText = 
+					stagingEnabled = True
+					state = Placed
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 00000000000000000000000000000000
+			persistentId = 1705919336
+			name = Hill
+			type = Flag
+			sit = LANDED
+			landed = True
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 136.0200001266785
+			lct = 2789763.3672567741
+			lastUT = 2789899.3872569008
+			distanceTraveled = 58.042880753592627
+			root = 0
+			lat = 1.9250412420967296
+			lon = -104.08375655474559
+			alt = 62.666178695420967
+			hgt = 0.366249472
+			nrm = 0.452245653,0.860825717,-0.233351827
+			rot = 0.295018971,0.517064929,-0.650962353,-0.471015632
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 7
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = NaN
+				ECC = 1
+				INC = 1.9250412420968217
+				LPE = 270
+				LAN = 201.157261740987
+				MNA = 0
+				EPH = 3492943.7142754099
+				REF = 3
+			}
+			PART
+			{
+				name = flag
+				cid = 4294182796
+				uid = 2338292070
+				mid = 4002110321
+				persistentId = 1093172651
+				launchID = 47
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				mass = 0.00999999978
+				shielded = False
+				temp = 4
+				tempExt = 4
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = flag(Clone)(Clone)
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = FlagSite
+					isEnabled = True
+					placedBy = Bob Kerman
+					PlaqueText = Placed this just for kicks.
+					stagingEnabled = True
+					state = Placed
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 88bf0877ffe24645991b454fa3e24126
+			persistentId = 3079324607
+			name = Ast. ELD-693
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
@@ -36912,17 +39122,17 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 2599657.8878595997
-			lct = 2599657.8878595997
+			met = 3049670.3804147919
+			lct = 3049670.3804147919
 			lastUT = -1
 			distanceTraveled = 0
 			root = 0
-			lat = 0.34266214082285412
-			lon = -86.836365472701786
-			alt = 13858285813.612192
+			lat = -1.1091278442055623
+			lon = -83.618012503946787
+			alt = 13307558420.750153
 			hgt = -1
 			nrm = 0,1,0
-			rot = 0.563775659,0.511856496,0.520528257,0.386277437
+			rot = 0.713632345,-0.659920633,0.197887644,0.12678355
 			CoM = 0,0,0
 			stg = 0
 			prst = False
@@ -36932,22 +39142,22 @@ GAME
 			PQSMax = 0
 			ORBIT
 			{
-				SMA = 15534112587.828018
-				ECC = 0.12745890124420731
-				INC = 0.47999412190186752
-				LPE = 184.23793620620842
-				LAN = 145.09669492536261
-				MNA = 0.048166411425064462
-				EPH = 3912478.1759455372
+				SMA = 14046495839.278517
+				ECC = 0.036206771915559204
+				INC = 1.4752567744226877
+				LPE = 332.16390571765004
+				LAN = 346.5159898596811
+				MNA = 0.51266174077450577
+				EPH = 4360415.2412546352
 				REF = 0
 			}
 			PART
 			{
 				name = PotatoRoid
 				cid = 0
-				uid = 1526344605
-				mid = 1526344605
-				persistentId = 4097899913
+				uid = 1885157013
+				mid = 1885157013
+				persistentId = 149006411
 				launchID = 0
 				parent = 0
 				position = 0,0,0
@@ -36982,10 +39192,316 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 2599657.8878595997
-				lifetime = 194995.28045654297
+				lastObservedTime = 3049670.3804147919
+				lifetime = 934689.44091796875
 				refTime = 1728000
-				size = 2
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 280f99c07249484b88bebb9975ad5a25
+			persistentId = 3526632375
+			name = Ast. HCF-067
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 3059270.3804147919
+			lct = 3059270.3804147919
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = 0.94688856689411849
+			lon = -89.829244769825436
+			alt = 13514454502.995743
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.623678744,0.378636092,-0.255912602,0.634167492
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 13815436714.467758
+				ECC = 0.020125827113548454
+				INC = 1.0204789669055927
+				LPE = 194.89177435547106
+				LAN = 187.66834884100496
+				MNA = -0.23295138032665569
+				EPH = 4822695.191205807
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 987904670
+				mid = 987904670
+				persistentId = 4086384766
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 3059270.3804147919
+				lifetime = 1279472.9644775391
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = c42201ab2d654782916c9c70c5b2f164
+			persistentId = 642870406
+			name = Ast. XIO-151
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 3403603.6309031923
+			lct = 3403603.6309031923
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = 0.46719313886359032
+			lon = 11.653994862470828
+			alt = 14731648423.543396
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.485811472,-0.538854897,-0.685085535,0.0654239655
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 14251462083.063578
+				ECC = 0.052156333758001688
+				INC = 0.67891450476835702
+				LPE = 226.96013774603466
+				LAN = 284.50806810622862
+				MNA = -0.52769854950735795
+				EPH = 7616521.8682078794
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 125351060
+				mid = 125351060
+				persistentId = 2863671431
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 3403603.6309031923
+				lifetime = 1720664.1540527344
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = bf7eab026f4b407383a9181f3051300f
+			persistentId = 2030265417
+			name = Ast. SMQ-665
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 3468787.8812932973
+			lct = 3468787.8812932973
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = 1.0050833113560824
+			lon = -54.3195370812428
+			alt = 13713406804.909609
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.308025986,0.496618718,0.452210128,0.673792064
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 13982321891.950172
+				ECC = 0.032418741609607421
+				INC = 1.2885547381899483
+				LPE = 219.66967206523591
+				LAN = 187.59364493952964
+				MNA = -0.63085297502763693
+				EPH = 4829954.8795843124
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 291611369
+				mid = 291611369
+				persistentId = 2722047066
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 3468787.8812932973
+				lifetime = 1341433.30078125
+				refTime = 1728000
+				size = 4
 			}
 			FLIGHTPLAN
 			{
@@ -37331,16 +39847,72 @@ GAME
 			gExperienced = 0
 			outDueToG = False
 			ToD = 0
-			idx = -1
+			idx = 0
 			extraXP = 0
 			hero = True
+			EVACHUTE
+			{
+				name = ModuleEvaChute
+				isEnabled = True
+				chuteYawRateAtMaxSpeed = 1
+				chuteMaxSpeedForYawRate = 50
+				chuteYawRateAtMinSpeed = 1
+				chuteMinSpeedForYawRate = 1
+				chuteRollRate = 1
+				chutePitchRate = 1
+				chuteDefaultForwardPitch = 9
+				semiDeployedChuteForwardPitch = 25
+				chutePitchRateDivisorWhenTurning = 1
+				chuteRollRateDivisorWhenPitching = 1
+				chuteYawRateDivisorWhenPitching = 1
+				persistentState = STOWED
+				animTime = 0
+				minAirPressureToOpen = 0.0399999991
+				deployAltitude = 1000
+				spreadAngle = 7
+				automateSafeDeploy = 0
+				stagingEnabled = True
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					DeployAction
+					{
+						actionGroup = None
+					}
+					CutAction
+					{
+						actionGroup = None
+					}
+				}
+				UPGRADESAPPLIED
+				{
+				}
+			}
 			CAREER_LOG
 			{
-				flight = 0
+				flight = 1
+				0 = Flight,Kerbin
+				0 = Suborbit,Kerbin
+				0 = Orbit,Kerbin
+				0 = ExitVessel,Kerbin
+				0 = BoardVessel,Kerbin
+				0 = Flyby,Minmus
+				0 = Escape,Minmus
+				0 = Orbit,Minmus
+				0 = ExitVessel,Minmus
+				0 = Suborbit,Minmus
+				0 = BoardVessel,Minmus
+				0 = Land,Minmus
+				0 = PlantFlag,Minmus
+				0 = Flyby,Kerbin
+				0 = Land,Kerbin
+				0 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 0
+				flight = 1
 			}
 		}
 		KERBAL
@@ -37683,93 +40255,6 @@ GAME
 				flight = 1
 			}
 		}
-		KERBAL
-		{
-			name = Lodfry Kerman
-			gender = Male
-			type = Unowned
-			trait = Engineer
-			brave = 0.829364061
-			dumb = 0.629308879
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Newise Kerman
-			gender = Female
-			type = Unowned
-			trait = Engineer
-			brave = 0.232782751
-			dumb = 0.891362965
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Wilfurt Kerman
-			gender = Female
-			type = Unowned
-			trait = Pilot
-			brave = 0.149806097
-			dumb = 0.468519241
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
 	}
 	MESSAGESYSTEM
 	{
@@ -37977,7 +40462,7 @@ GAME
 		MESSAGE
 		{
 			title = World First Milestones
-			message = The recent accomplishments of our space program have attracted contributions from numerous organizations!~n~nWe have broken a speed record of 25m/s.~n<color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have launched our first vessel.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  1,600 </color>~n~n We have broken a speed record of 80m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 500m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a speed record of 250m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 2,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 1,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have returned to the surface.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  1,600 </color>~n~n We have recovered our first crew from a mission.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  1,600 </color>~n~n We have performed the first one of our experiments at home.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  3,200 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken a land distance record of 3,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have splashed into the ocean.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  4,800 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken an altitude record of 7,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 22km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 10km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a speed record of 790m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 32km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 70km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have reached space.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  16,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have broken a land distance record of 100km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have entered orbit.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  24,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n We have returned to the surface from orbit.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  24,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n We have broken a speed record of 2,500m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have initiated the first fly by of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  26,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have escaped the gravitational influence of Kerbin.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  26,400 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n We have escaped the gravitational influence of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  18,720 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have returned home from a fly by of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  26,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have gathered the first scientific data from The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  12,480 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have performed an EVA test at home.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  3,200 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have planted the first one of our flags at home.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  3,200 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken an ocean depth record of 10m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have performed a spacewalk in orbit of Kerbin.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  12,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have entered orbit of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  24,960 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have entered into suborbital spaceflight above The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  26,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have landed on the surface of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  31,200 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n We have walked on the surface of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  12,480 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have returned home from the surface of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  31,200 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n We have returned home from orbit of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  24,960 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have planted a flag on The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  12,480 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have performed a spacewalk in orbit of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  15,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have performed a rendezvous maneuver around Kerbin.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  24,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n We have started constructing the first station around Kerbin.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  28,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6 </color>~n~n We have performed a docking maneuver on Kerbin.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  4,800 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have discovered an abandoned island airfield on Kerbin.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  4,800 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have performed a rendezvous maneuver around The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  24,960 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have performed a crew transfer near The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  16,640 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n
+			message = The recent accomplishments of our space program have attracted contributions from numerous organizations!~n~nWe have broken a speed record of 25m/s.~n<color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have launched our first vessel.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  1,600 </color>~n~n We have broken a speed record of 80m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 500m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a speed record of 250m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 2,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 1,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have returned to the surface.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  1,600 </color>~n~n We have recovered our first crew from a mission.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  1,600 </color>~n~n We have performed the first one of our experiments at home.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  3,200 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken a land distance record of 3,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have splashed into the ocean.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  4,800 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken an altitude record of 7,000m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 22km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 10km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a speed record of 790m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken a land distance record of 32km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have broken an altitude record of 70km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have reached space.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  16,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have broken a land distance record of 100km.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have entered orbit.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  24,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n We have returned to the surface from orbit.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  24,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n We have broken a speed record of 2,500m/s.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have initiated the first fly by of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  26,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have escaped the gravitational influence of Kerbin.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  26,400 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n We have escaped the gravitational influence of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  18,720 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have returned home from a fly by of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  26,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have gathered the first scientific data from The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  12,480 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have performed an EVA test at home.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  3,200 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have planted the first one of our flags at home.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  3,200 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have broken an ocean depth record of 10m.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  9,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have performed a spacewalk in orbit of Kerbin.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  12,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have entered orbit of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  24,960 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have entered into suborbital spaceflight above The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  26,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have landed on the surface of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  31,200 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n We have walked on the surface of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  12,480 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have returned home from the surface of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  31,200 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n We have returned home from orbit of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  24,960 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have planted a flag on The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  12,480 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have performed a spacewalk in orbit of The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  15,600 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have performed a rendezvous maneuver around Kerbin.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  24,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n We have started constructing the first station around Kerbin.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  28,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 3 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 6 </color>~n~n We have performed a docking maneuver on Kerbin.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  4,800 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have discovered an abandoned island airfield on Kerbin.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  4,800 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 1 </color>~n~n We have performed a rendezvous maneuver around The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  24,960 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have performed a crew transfer near The Mun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  16,640 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have initiated the first fly by of Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  29,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have entered orbit of Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  27,840 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have performed a spacewalk in orbit of Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  17,400 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have entered into suborbital spaceflight above Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  29,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have escaped the gravitational influence of Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  20,880 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have landed on the surface of Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  34,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n We have walked on the surface of Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  13,920 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have planted a flag on Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  13,920 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have initiated the first fly by of The Sun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  38,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have entered orbit of The Sun.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  36,480 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have returned home from the surface of Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  34,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n We have returned home from a fly by of Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  29,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have returned home from orbit of Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  27,840 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have gathered the first scientific data from Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  13,920 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n
 			color = 3
 			icon = 6
 			read = False
