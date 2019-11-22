@@ -1,8 +1,8 @@
-ship = Parakeet P2
+ship = Parrot P2
 version = 1.4.5
 description = 
 type = VAB
-size = 5.46285629,33.0773697,11.5989323
+size = 5.46286392,33.0773697,11.5989513
 steamPublishedFileId = 0
 persistentId = 3596609646
 rot = 0,0,0,0
@@ -12,7 +12,7 @@ PART
 {
 	part = dockingPort2_4292911234
 	partName = Part
-	persistentId = 2694926568
+	persistentId = 3071994894
 	pos = 2.02321196,33.0174828,-0.170776054
 	attPos = 0,0,0
 	attPos0 = 2.02321196,33.0174828,-0.170776054
@@ -94,7 +94,7 @@ PART
 {
 	part = ServiceBay.250_4292910976
 	partName = Part
-	persistentId = 1542173206
+	persistentId = 459201932
 	pos = 2.02321196,32.367485,-0.170776054
 	attPos = 0,0,0
 	attPos0 = 0,-0.649999619,0
@@ -208,7 +208,7 @@ PART
 {
 	part = probeCoreHex_4292910670
 	partName = Part
-	persistentId = 871427802
+	persistentId = 1286718380
 	pos = 2.02321196,32.004982,-0.170776054
 	attPos = 0,0,0
 	attPos0 = 0,-0.362499237,0
@@ -390,7 +390,7 @@ PART
 {
 	part = ksp.r.largeBatteryPack_4292910630
 	partName = Part
-	persistentId = 3893169198
+	persistentId = 525602909
 	pos = 2.74882936,31.817482,-0.170776054
 	attPos = 0,0,0
 	attPos0 = 0.725617588,-0.550001144,2.98023224E-08
@@ -440,7 +440,7 @@ PART
 {
 	part = ksp.r.largeBatteryPack_4292910608
 	partName = Part
-	persistentId = 1174738928
+	persistentId = 2683115644
 	pos = 2.02321196,31.817482,-0.896393478
 	attPos = 0,0,0
 	attPos0 = 5.96046448E-08,-0.550001144,-0.725617528
@@ -490,7 +490,7 @@ PART
 {
 	part = ksp.r.largeBatteryPack_4292910586
 	partName = Part
-	persistentId = 98186968
+	persistentId = 3472524326
 	pos = 1.29759443,31.817482,-0.170776054
 	attPos = 0,0,0
 	attPos0 = -0.725617588,-0.550001144,2.98023224E-08
@@ -540,7 +540,7 @@ PART
 {
 	part = ksp.r.largeBatteryPack_4292910564
 	partName = Part
-	persistentId = 1225042524
+	persistentId = 676291255
 	pos = 2.02321196,31.817482,0.554841697
 	attPos = 0,0,0
 	attPos0 = 0,-0.550001144,0.725617588
@@ -590,7 +590,7 @@ PART
 {
 	part = asasmodule1-2_4292910542
 	partName = Part
-	persistentId = 2340387702
+	persistentId = 2160459070
 	pos = 2.02321196,31.4674835,-0.170776054
 	attPos = 0,0,0
 	attPos0 = 0,-0.899999619,0
@@ -663,7 +663,7 @@ PART
 {
 	part = RCSTank1-2_4292005308
 	partName = Part
-	persistentId = 551303032
+	persistentId = 3018583997
 	pos = 2.02321196,30.7174835,-0.170776054
 	attPos = 0,0,0
 	attPos0 = 0,-0.75,0
@@ -733,7 +733,7 @@ PART
 {
 	part = RCSTank1-2_4292910514
 	partName = Part
-	persistentId = 4017349304
+	persistentId = 732821666
 	pos = 2.02321196,29.7174835,-0.170776054
 	attPos = 0,0,0
 	attPos0 = 0,-1,0
@@ -799,7 +799,7 @@ PART
 {
 	part = Rockomax32.BW_4292910480
 	partName = Part
-	persistentId = 2975917197
+	persistentId = 3966055692
 	pos = 2.02321196,27.3574829,-0.170776054
 	attPos = 0,0,0
 	attPos0 = 0,-2.36000061,0
@@ -883,7 +883,7 @@ PART
 {
 	part = solarPanels2_4292905648
 	partName = Part
-	persistentId = 4102718683
+	persistentId = 1897914045
 	pos = 2.02321196,28.808569,1.05983329
 	attPos = 0,0,0
 	attPos0 = 0,1.45108509,1.23060942
@@ -957,7 +957,7 @@ PART
 {
 	part = solarPanels2_4292905536
 	partName = Part
-	persistentId = 2908416936
+	persistentId = 785154745
 	pos = 3.08895111,28.808569,0.444528639
 	attPos = 0,0,0
 	attPos0 = 1.06573904,1.45108509,0.615304708
@@ -1031,7 +1031,7 @@ PART
 {
 	part = solarPanels2_4292905424
 	partName = Part
-	persistentId = 3595679943
+	persistentId = 2185775360
 	pos = 3.08895111,28.808569,-0.786081016
 	attPos = 0,0,0
 	attPos0 = 1.06573904,1.45108509,-0.615304828
@@ -1105,7 +1105,7 @@ PART
 {
 	part = solarPanels2_4292905312
 	partName = Part
-	persistentId = 1930953708
+	persistentId = 1988216218
 	pos = 2.02321196,28.808569,-1.40138543
 	attPos = 0,0,0
 	attPos0 = -1.1920929E-07,1.45108509,-1.23060942
@@ -1179,7 +1179,7 @@ PART
 {
 	part = solarPanels2_4292905200
 	partName = Part
-	persistentId = 644433845
+	persistentId = 2041300740
 	pos = 0.957472682,28.808569,-0.786080778
 	attPos = 0,0,0
 	attPos0 = -1.06573915,1.45108509,-0.615304708
@@ -1253,7 +1253,7 @@ PART
 {
 	part = solarPanels2_4292905088
 	partName = Part
-	persistentId = 2942019154
+	persistentId = 1411927308
 	pos = 0.957472682,28.808569,0.44452852
 	attPos = 0,0,0
 	attPos0 = -1.06573915,1.45108509,0.615304589
@@ -1327,7 +1327,7 @@ PART
 {
 	part = dockingPort2_4292904976
 	partName = Part
-	persistentId = 965493231
+	persistentId = 562308634
 	pos = 2.02321196,27.1599884,-1.40814269
 	attPos = 0,0,0
 	attPos0 = -1.1920929E-07,-0.197495461,-1.23736668
@@ -1407,7 +1407,7 @@ PART
 {
 	part = dockingPort2_4292904936
 	partName = Part
-	persistentId = 897923564
+	persistentId = 1983321383
 	pos = 2.02321219,27.1599884,1.06659055
 	attPos = 0,0,0
 	attPos0 = 2.38418579E-07,-0.197495461,1.23736668
@@ -1487,7 +1487,7 @@ PART
 {
 	part = Rockomax32.BW_4292910442
 	partName = Part
-	persistentId = 1600292816
+	persistentId = 694042455
 	pos = 2.02321196,23.6374855,-0.170776054
 	attPos = 0,0,0
 	attPos0 = 0,-3.71999931,0
@@ -1571,7 +1571,7 @@ PART
 {
 	part = dockingPort2_4292910040
 	partName = Part
-	persistentId = 1654273650
+	persistentId = 2288827671
 	pos = 2.02321196,22.4888382,-1.41910565
 	attPos = 0,0,0
 	attPos0 = 1.1920929E-07,-1.14864731,-1.24832976
@@ -1651,7 +1651,7 @@ PART
 {
 	part = dockingPort2_4292907844
 	partName = Part
-	persistentId = 839796766
+	persistentId = 1262174652
 	pos = 2.02321196,22.4888382,1.07755399
 	attPos = 0,0,0
 	attPos0 = 0,-1.14864731,1.24832988
@@ -1731,7 +1731,7 @@ PART
 {
 	part = RCSBlock_4291997026
 	partName = Part
-	persistentId = 2220664443
+	persistentId = 766292188
 	pos = 0.758149624,30.6371307,-0.170033857
 	attPos = 0,0,0
 	attPos0 = -1.26506233,-0.0803527832,0.000742197037
@@ -1800,7 +1800,7 @@ PART
 {
 	part = RCSBlock_4291996366
 	partName = Part
-	persistentId = 613533010
+	persistentId = 2461442820
 	pos = 2.02395391,30.6371307,1.0942862
 	attPos = 0,0,0
 	attPos0 = 0.000742077827,-0.0803527832,1.26506221
@@ -1869,7 +1869,7 @@ PART
 {
 	part = RCSBlock_4291996302
 	partName = Part
-	persistentId = 2845601213
+	persistentId = 2017351534
 	pos = 3.28827429,30.6371307,-0.171518251
 	attPos = 0,0,0
 	attPos0 = 1.26506233,-0.0803527832,-0.000742197037
@@ -1938,7 +1938,7 @@ PART
 {
 	part = RCSBlock_4291996238
 	partName = Part
-	persistentId = 2395535640
+	persistentId = 1381689469
 	pos = 2.02246952,30.6371307,-1.43583834
 	attPos = 0,0,0
 	attPos0 = -0.000742316246,-0.0803527832,-1.26506233
@@ -2007,7 +2007,7 @@ PART
 {
 	part = RCSBlock_4291994432
 	partName = Part
-	persistentId = 4294186036
+	persistentId = 2864621966
 	pos = 0.724735618,24.8070908,-0.170033857
 	attPos = 0,0,0
 	attPos0 = -1.29847634,1.16960526,0.000742197037
@@ -2076,7 +2076,7 @@ PART
 {
 	part = RCSBlock_4291992800
 	partName = Part
-	persistentId = 335583166
+	persistentId = 2663056617
 	pos = 2.02395391,24.8070908,1.12770009
 	attPos = 0,0,0
 	attPos0 = 0.000742077827,1.16960526,1.29847622
@@ -2145,7 +2145,7 @@ PART
 {
 	part = RCSBlock_4291992736
 	partName = Part
-	persistentId = 2321575284
+	persistentId = 3039912725
 	pos = 3.32168818,24.8070908,-0.171518251
 	attPos = 0,0,0
 	attPos0 = 1.29847622,1.16960526,-0.000742197037
@@ -2214,7 +2214,7 @@ PART
 {
 	part = RCSBlock_4291992672
 	partName = Part
-	persistentId = 4278539584
+	persistentId = 3103925039
 	pos = 2.02246952,24.8070908,-1.46925223
 	attPos = 0,0,0
 	attPos0 = -0.000742316246,1.16960526,-1.29847622
@@ -2283,7 +2283,7 @@ PART
 {
 	part = largeAdapter_4292910404
 	partName = Part
-	persistentId = 560596584
+	persistentId = 2592091006
 	pos = 2.02321196,21.0224857,-0.170776054
 	attPos = 0,0,0
 	attPos0 = 0,-2.61499977,0
@@ -2321,7 +2321,7 @@ PART
 {
 	part = stackTriCoupler_4292910378
 	partName = Part
-	persistentId = 3132986755
+	persistentId = 2975658843
 	pos = 2.02321196,19.737566,-0.170776054
 	attPos = 0,0,0
 	attPos0 = 0,1.28491974,0
@@ -2363,8 +2363,8 @@ PART
 {
 	part = nuclearEngine_4292910352
 	partName = Part
-	persistentId = 2123310768
-	pos = 1.66155934,17.8975868,-0.797177613
+	persistentId = 3467000748
+	pos = 1.66155934,17.8975868,-0.797177851
 	attPos = 0,0,0
 	attPos0 = -0.62640059,-1.83997798,0.361652404
 	rot = 0,0,0,1.00000012
@@ -2539,8 +2539,8 @@ PART
 {
 	part = nuclearEngine_4291025570
 	partName = Part
-	persistentId = 1910783733
-	pos = 1.66155803,17.8975868,0.455626309
+	persistentId = 35312805
+	pos = 1.66155756,17.8975868,0.455626786
 	attPos = 0,0,0
 	attPos0 = 0.626400828,-1.83997798,0.361652434
 	rot = 0,0.866025448,0,0.49999997
@@ -2715,8 +2715,8 @@ PART
 {
 	part = nuclearEngine_4291025308
 	partName = Part
-	persistentId = 297064378
-	pos = 2.74651861,17.8975868,-0.170776829
+	persistentId = 2408067121
+	pos = 2.74651909,17.8975868,-0.170777068
 	attPos = 0,0,0
 	attPos0 = -1.1920924E-07,-1.83997798,-0.723304987
 	rot = 0,0.866025388,0,-0.50000006
@@ -2891,7 +2891,7 @@ PART
 {
 	part = radialDecoupler2_4291306914
 	partName = Part
-	persistentId = 3971369856
+	persistentId = 2595956114
 	pos = 2.02321196,23.8466244,1.02657008
 	attPos = 0,0,0
 	attPos0 = 0,0.20913887,1.19734609
@@ -2993,8 +2993,8 @@ PART
 {
 	part = Rockomax32.BW_4291306854
 	partName = Part
-	persistentId = 599102356
-	pos = 2.02321219,23.5014763,2.89352274
+	persistentId = 1992038110
+	pos = 2.02321219,23.5014763,2.89352369
 	attPos = 0,0,0
 	attPos0 = -1.86692953,-0.345149696,0
 	rot = 1.839162E-07,-0.707106829,1.839162E-07,-0.707106829
@@ -3021,6 +3021,7 @@ PART
 	link = strutConnector_4290920508
 	link = fuelLine_4290901694
 	link = Rockomax32.BW_4290438458
+	link = parachuteRadial_4293216002
 	sym = Rockomax32.BW_4291003976
 	srfN = srfAttach,radialDecoupler2_4291306914
 	attN = top,Rockomax32.BW_4290438458_0|1.86|0
@@ -3077,8 +3078,8 @@ PART
 {
 	part = strutConnector_4291306202
 	partName = CompoundPart
-	persistentId = 1727153997
-	pos = 0.784857154,25.1068764,2.8935225
+	persistentId = 2306384229
+	pos = 0.784856439,25.1068764,2.89352345
 	attPos = 0,0,0
 	attPos0 = -4.94790925E-07,1.60540009,-1.23834085
 	rot = 2.60096783E-07,0,-1.4958087E-07,-1.00000012
@@ -3148,8 +3149,8 @@ PART
 {
 	part = strutConnector_4291306106
 	partName = CompoundPart
-	persistentId = 507285939
-	pos = 3.25904226,25.1656017,2.89352345
+	persistentId = 729381816
+	pos = 3.25904322,25.1656017,2.89352441
 	attPos = 0,0,0
 	attPos0 = -1.43167961E-06,1.66412449,1.23581493
 	rot = -3.34148808E-07,1.00000012,-2.60096868E-07,1.1920929E-07
@@ -3219,7 +3220,7 @@ PART
 {
 	part = radialDecoupler2_4291004036
 	partName = Part
-	persistentId = 3915782866
+	persistentId = 3363600124
 	pos = 2.02321196,23.8466244,-1.3681221
 	attPos = 0,0,0
 	attPos0 = 0,0.20913887,-1.19734609
@@ -3321,8 +3322,8 @@ PART
 {
 	part = Rockomax32.BW_4291003976
 	partName = Part
-	persistentId = 4243180813
-	pos = 2.02321172,23.5014763,-3.235075
+	persistentId = 3114384458
+	pos = 2.02321172,23.5014763,-3.23507595
 	attPos = 0,0,0
 	attPos0 = -1.86692953,-0.345149696,0
 	rot = 1.83916214E-07,-0.707106769,-1.839162E-07,0.707106888
@@ -3349,6 +3350,7 @@ PART
 	link = strutConnector_4290920828
 	link = fuelLine_4290900454
 	link = Rockomax32.BW_4290437088
+	link = parachuteRadial_4293216668
 	sym = Rockomax32.BW_4291306854
 	srfN = srfAttach,radialDecoupler2_4291004036
 	attN = top,Rockomax32.BW_4290437088_0|1.86|0
@@ -3405,8 +3407,8 @@ PART
 {
 	part = strutConnector_4291003456
 	partName = CompoundPart
-	persistentId = 313738646
-	pos = 3.26156759,25.1068764,-3.23507476
+	persistentId = 1912317725
+	pos = 3.26156855,25.1068764,-3.23507571
 	attPos = 0,0,0
 	attPos0 = -4.94790925E-07,1.60540009,-1.23834085
 	rot = -1.4958087E-07,-1.00000012,-2.60096783E-07,1.1920929E-07
@@ -3476,8 +3478,8 @@ PART
 {
 	part = strutConnector_4291003360
 	partName = CompoundPart
-	persistentId = 1225970464
-	pos = 0.787382126,25.1656017,-3.23507571
+	persistentId = 2038597219
+	pos = 0.787381411,25.1656017,-3.23507667
 	attPos = 0,0,0
 	attPos0 = -1.43167961E-06,1.66412449,1.23581493
 	rot = -2.60096897E-07,0,3.34148751E-07,-1.00000012
@@ -3547,8 +3549,8 @@ PART
 {
 	part = liquidEngine1-2_4290983462
 	partName = Part
-	persistentId = 1930926585
-	pos = 2.02321219,20.5761681,2.89352584
+	persistentId = 3441339650
+	pos = 2.02321219,20.5761681,2.89352775
 	attPos = 0,0,0
 	attPos0 = -2.40115924E-07,-2.92530799,0
 	rot = 0,0,0,1.00000012
@@ -3749,8 +3751,8 @@ PART
 {
 	part = liquidEngine1-2_4290982364
 	partName = Part
-	persistentId = 975242540
-	pos = 2.02321172,20.5761681,-3.2350781
+	persistentId = 3686376391
+	pos = 2.02321172,20.5761681,-3.23508
 	attPos = 0,0,0
 	attPos0 = -2.40115924E-07,-2.92530799,1.19208899E-07
 	rot = 0,1.00000012,0,-1.1920929E-07
@@ -3951,8 +3953,8 @@ PART
 {
 	part = Separator.2_4290967552
 	partName = Part
-	persistentId = 1171527083
-	pos = 2.02321219,18.5453796,2.89352632
+	persistentId = 2341921448
+	pos = 2.02321219,18.5453796,2.89352822
 	attPos = 0,0,0
 	attPos0 = -5.6843595E-14,-2.03078866,4.44787105E-07
 	rot = 0,0,0,1.00000012
@@ -4054,8 +4056,8 @@ PART
 {
 	part = Separator.2_4290967176
 	partName = Part
-	persistentId = 3302615009
-	pos = 2.02321172,18.5453796,-3.23507857
+	persistentId = 2906731594
+	pos = 2.02321172,18.5453796,-3.23508048
 	attPos = 0,0,0
 	attPos0 = -5.6843595E-14,-2.03078866,4.44787105E-07
 	rot = 4.26325641E-14,1.00000012,2.84217094E-14,-1.1920929E-07
@@ -4157,8 +4159,8 @@ PART
 {
 	part = Rockomax32.BW_4290959766
 	partName = Part
-	persistentId = 3276038553
-	pos = 2.02321219,16.5853806,2.89352822
+	persistentId = 3156338431
+	pos = 2.02321219,16.5853806,2.89353108
 	attPos = 0,0,0
 	attPos0 = -5.6843595E-14,-1.95999908,5.06938022E-07
 	rot = 0,0,0,1.00000012
@@ -4182,7 +4184,6 @@ PART
 	link = fuelLine_4290913340
 	link = radialDrogue_4294357528
 	link = parachuteRadial_4294352858
-	link = parachuteRadial_4294350838
 	sym = Rockomax32.BW_4290958892
 	attN = top,Separator.2_4290967552_0|1.86|0
 	attN = bottom,Rockomax32.BW_4291306810_0|-1.86|0
@@ -4238,8 +4239,8 @@ PART
 {
 	part = Rockomax32.BW_4290958892
 	partName = Part
-	persistentId = 1049327773
-	pos = 2.02321172,16.5853806,-3.23508048
+	persistentId = 3944719932
+	pos = 2.02321172,16.5853806,-3.23508334
 	attPos = 0,0,0
 	attPos0 = -2.23963155E-13,-1.95999908,5.06937965E-07
 	rot = 5.68434189E-14,1.00000012,8.52651283E-14,-1.1920929E-07
@@ -4263,7 +4264,6 @@ PART
 	link = fuelLine_4290910606
 	link = radialDrogue_4294354726
 	link = parachuteRadial_4294352196
-	link = parachuteRadial_4294349036
 	sym = Rockomax32.BW_4290959766
 	attN = top,Separator.2_4290967176_0|1.86|0
 	attN = bottom,Rockomax32.BW_4290958524_0|-1.86|0
@@ -4319,8 +4319,8 @@ PART
 {
 	part = Rockomax32.BW_4291306810
 	partName = Part
-	persistentId = 1679965734
-	pos = 2.02321219,12.8653793,2.89353156
+	persistentId = 1776197588
+	pos = 2.02321219,12.8653793,2.89353633
 	attPos = 0,0,0
 	attPos0 = -1.1368719E-13,-3.72000122,4.95042286E-07
 	rot = 0,0,0,1.00000012
@@ -4342,6 +4342,7 @@ PART
 	modSize = 0,0,0
 	link = Size2LFB_4291290694
 	link = strutConnector_4290924526
+	link = parachuteRadial_4293222356
 	sym = Rockomax32.BW_4290958524
 	attN = top,Rockomax32.BW_4290959766_0|1.86|0
 	attN = bottom,Size2LFB_4291290694_0|-1.86|0
@@ -4397,11 +4398,11 @@ PART
 {
 	part = Size2LFB_4291290694
 	partName = Part
-	persistentId = 2355181650
-	pos = 2.02321219,6.64937782,2.89353395
+	persistentId = 440293931
+	pos = 2.02321219,6.64937782,2.89353967
 	attPos = 0,0,0
 	attPos0 = 2.84217162E-14,-6.21599579,7.16755324E-07
-	rot = -1.42108547E-13,0.707106829,1.47658497E-13,0.707106948
+	rot = -1.98951966E-13,0.707106829,2.04501916E-13,0.707106948
 	attRot = 0,-0.707106769,0,0.707106769
 	attRot0 = -1.59872099E-14,0.707106769,1.31702874E-14,0.707106888
 	mir = 1,1,1
@@ -4422,6 +4423,7 @@ PART
 	link = R8winglet_4291288902
 	link = R8winglet_4291306562
 	link = R8winglet_4290942862
+	link = parachuteRadial_4293222782
 	sym = Size2LFB_4290958480
 	attN = top,Rockomax32.BW_4291306810_0|4.356|0
 	EVENTS
@@ -4602,11 +4604,11 @@ PART
 {
 	part = R8winglet_4291289178
 	partName = Part
-	persistentId = 2843203433
-	pos = 2.02321267,6.30053139,4.73967075
+	persistentId = 2941225847
+	pos = 2.02321267,6.30053139,4.73968029
 	attPos = 0,0,0
 	attPos0 = -1.84611368,-0.348846763,5.96048437E-07
-	rot = -7.76850629E-06,-0.707106948,-7.76850266E-06,-0.707106829
+	rot = -7.76850902E-06,-0.707106948,-7.76850356E-06,-0.707106829
 	attRot = 0,0,0,1
 	attRot0 = -9.20799136E-13,-1.78813892E-07,-1.09863122E-05,-1
 	mir = 1,1,1
@@ -4675,8 +4677,8 @@ PART
 {
 	part = R8winglet_4291288902
 	partName = Part
-	persistentId = 828494772
-	pos = 0.180803537,6.45134354,2.89353585
+	persistentId = 2470063825
+	pos = 0.180799961,6.45134354,2.89354157
 	attPos = 0,0,0
 	attPos0 = -1.66743678E-06,-0.19803448,-1.8423866
 	rot = -1.67688086E-12,-1.1920929E-07,-1.10128158E-05,-1.00000024
@@ -4748,8 +4750,8 @@ PART
 {
 	part = R8winglet_4291306562
 	partName = Part
-	persistentId = 2035698049
-	pos = 3.86011434,6.28429794,2.89353514
+	persistentId = 3175818428
+	pos = 3.86011815,6.28429794,2.89354086
 	attPos = 0,0,0
 	attPos0 = -7.13758993E-07,-0.365080237,1.83687985
 	rot = 1.05960671E-05,1.00000024,3.36797257E-12,2.68220901E-07
@@ -4821,8 +4823,8 @@ PART
 {
 	part = Rockomax32.BW_4290958524
 	partName = Part
-	persistentId = 230667560
-	pos = 2.02321172,12.8653793,-3.23508382
+	persistentId = 2751635945
+	pos = 2.02321172,12.8653793,-3.23508859
 	attPos = 0,0,0
 	attPos0 = -6.42331132E-13,-3.72000122,4.95041832E-07
 	rot = 5.68434189E-14,1.00000012,8.52651283E-14,-1.1920929E-07
@@ -4844,6 +4846,7 @@ PART
 	modSize = 0,0,0
 	link = Size2LFB_4290958480
 	link = strutConnector_4290923600
+	link = parachuteRadial_4294286706
 	sym = Rockomax32.BW_4291306810
 	attN = top,Rockomax32.BW_4290958892_0|1.86|0
 	attN = bottom,Size2LFB_4290958480_0|-1.86|0
@@ -4899,8 +4902,8 @@ PART
 {
 	part = Size2LFB_4290958480
 	partName = Part
-	persistentId = 1675756773
-	pos = 2.02321172,6.64937782,-3.2350862
+	persistentId = 3762095707
+	pos = 2.02321172,6.64937782,-3.23509192
 	attPos = 0,0,0
 	attPos0 = 2.84217162E-14,-6.21599579,7.16755324E-07
 	rot = 0,0.707106888,1.19236787E-13,-0.707106888
@@ -4924,6 +4927,7 @@ PART
 	link = R8winglet_4290958312
 	link = R8winglet_4290958268
 	link = R8winglet_4290942274
+	link = parachuteRadial_4294349036
 	sym = Size2LFB_4291290694
 	attN = top,Rockomax32.BW_4290958524_0|4.356|0
 	EVENTS
@@ -5104,8 +5108,8 @@ PART
 {
 	part = R8winglet_4290958356
 	partName = Part
-	persistentId = 3881155889
-	pos = 2.02321124,6.30053139,-5.08122253
+	persistentId = 3063143870
+	pos = 2.02321124,6.30053139,-5.08123207
 	attPos = 0,0,0
 	attPos0 = -1.84611368,-0.348846763,5.96048437E-07
 	rot = -7.7684972E-06,-0.707106769,7.76849811E-06,0.707107008
@@ -5177,8 +5181,8 @@ PART
 {
 	part = R8winglet_4290958312
 	partName = Part
-	persistentId = 377624821
-	pos = 3.86562061,6.45134354,-3.23508811
+	persistentId = 2594623339
+	pos = 3.86562443,6.45134354,-3.23509383
 	attPos = 0,0,0
 	attPos0 = -1.66743678E-06,-0.19803448,-1.8423866
 	rot = -1.10128158E-05,-1.00000024,3.38218342E-12,1.78813934E-07
@@ -5250,8 +5254,8 @@ PART
 {
 	part = R8winglet_4290958268
 	partName = Part
-	persistentId = 345225468
-	pos = 0.186310172,6.28429794,-3.23508739
+	persistentId = 3711997528
+	pos = 0.186306596,6.28429794,-3.23509312
 	attPos = 0,0,0
 	attPos0 = -7.13758993E-07,-0.365080237,1.83687985
 	rot = 3.4532377E-12,1.78813934E-07,-1.0596068E-05,-1.00000024
@@ -5323,11 +5327,11 @@ PART
 {
 	part = R8winglet_4290942862
 	partName = Part
-	persistentId = 3245537235
-	pos = 2.02321219,6.48698425,1.05729973
+	persistentId = 3286988095
+	pos = 2.02321219,6.48698425,1.05730259
 	attPos = 0,0,0
 	attPos0 = 1.83621824,-0.162392616,-1.1920924E-07
-	rot = 7.61696492E-06,0.707106888,-7.61696674E-06,-0.707106888
+	rot = 7.61696447E-06,0.707106888,-7.61696583E-06,-0.707106888
 	attRot = 0,0,0,1
 	attRot0 = 1.07720161E-05,1,-1.81846866E-12,-1.19209261E-07
 	mir = 1,1,1
@@ -5396,8 +5400,8 @@ PART
 {
 	part = R8winglet_4290942274
 	partName = Part
-	persistentId = 472311456
-	pos = 2.02321148,6.48698425,-1.39884984
+	persistentId = 137246955
+	pos = 2.02321148,6.48698425,-1.39885247
 	attPos = 0,0,0
 	attPos0 = 1.83621955,-0.162392616,0
 	rot = -7.61696765E-06,-0.707106948,-7.61696538E-06,-0.707106829
@@ -5469,7 +5473,7 @@ PART
 {
 	part = rocketNoseCone_4290936076
 	partName = Part
-	persistentId = 2866530544
+	persistentId = 2705869100
 	pos = 2.02321196,33.3003654,-0.170776054
 	attPos = 0,0,0
 	attPos0 = 0,0.28288269,0
@@ -5505,11 +5509,11 @@ PART
 {
 	part = strutConnector_4290924526
 	partName = CompoundPart
-	persistentId = 509040739
-	pos = 0.797466278,14.4903755,2.89353251
+	persistentId = 2408547517
+	pos = 0.797465086,14.4903755,2.89353728
 	attPos = 0,0,0
 	attPos0 = -1.22573769,1.62499619,5.79794687E-07
-	rot = 5.68434189E-14,1.1920929E-07,1.54268179E-07,1.00000012
+	rot = 8.52651283E-14,1.1920929E-07,1.54268264E-07,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 4.26325608E-14,1.19209275E-07,1.54267866E-07,1
 	mir = 1,1,1
@@ -5576,8 +5580,8 @@ PART
 {
 	part = strutConnector_4290923600
 	partName = CompoundPart
-	persistentId = 541386165
-	pos = 3.24895763,14.4903755,-3.23508549
+	persistentId = 4265097896
+	pos = 3.24895859,14.4903755,-3.23509026
 	attPos = 0,0,0
 	attPos0 = -1.22573841,1.62499619,1.29504986E-06
 	rot = 1.54268193E-07,1.00000012,0,-2.08616257E-07
@@ -5647,11 +5651,11 @@ PART
 {
 	part = strutConnector_4290921790
 	partName = CompoundPart
-	persistentId = 3076609192
-	pos = 0.795060158,21.8891888,2.89352441
+	persistentId = 3179581638
+	pos = 0.795059443,21.8891888,2.89352536
 	attPos = 0,0,0
 	attPos0 = -8.18479919E-07,-1.61228752,-1.22814608
-	rot = -2.6009684E-07,2.08616257E-07,1.48103865E-07,1.00000012
+	rot = -2.6009684E-07,2.08616257E-07,1.48103936E-07,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 1.04725196E-07,0.707106709,-1.04725146E-07,-0.707106948
 	mir = 1,1,1
@@ -5718,8 +5722,8 @@ PART
 {
 	part = strutConnector_4290921684
 	partName = CompoundPart
-	persistentId = 2384997767
-	pos = 3.25136471,21.8891888,-3.23507714
+	persistentId = 2039145904
+	pos = 3.25136566,21.8891888,-3.2350781
 	attPos = 0,0,0
 	attPos0 = -1.29531713E-06,-1.61228752,-1.22814631
 	rot = 1.48103737E-07,1.00000012,2.6009684E-07,-2.38418579E-07
@@ -5789,8 +5793,8 @@ PART
 {
 	part = strutConnector_4290920828
 	partName = CompoundPart
-	persistentId = 4111831063
-	pos = 0.782738686,21.8306828,-3.23507667
+	persistentId = 274781635
+	pos = 0.78273797,21.8306828,-3.23507762
 	attPos = 0,0,0
 	attPos0 = -7.15993792E-07,-1.67079329,1.24046707
 	rot = 2.6009684E-07,1.1920929E-07,-2.51404174E-07,1.00000012
@@ -5860,8 +5864,8 @@ PART
 {
 	part = strutConnector_4290920508
 	partName = CompoundPart
-	persistentId = 2850134663
-	pos = 3.26368618,21.8306828,2.89352512
+	persistentId = 1504146923
+	pos = 3.26368713,21.8306828,2.89352608
 	attPos = 0,0,0
 	attPos0 = -1.43124953E-06,-1.67079329,1.24046743
 	rot = 2.51404089E-07,-1.00000012,2.6009684E-07,0
@@ -5931,8 +5935,8 @@ PART
 {
 	part = fuelLine_4290913340
 	partName = CompoundPart
-	persistentId = 2216155417
-	pos = 0.781800032,18.0734158,2.8935287
+	persistentId = 3206181900
+	pos = 0.78179884,18.0734158,2.89353156
 	attPos = 0,0,0
 	attPos0 = -1.24140859,1.4880352,4.78790753E-07
 	rot = 1.42108547E-14,1.1920929E-07,-1.23414239E-07,1.00000012
@@ -6002,8 +6006,8 @@ PART
 {
 	part = fuelLine_4290910606
 	partName = CompoundPart
-	persistentId = 1281903931
-	pos = 3.26462364,18.0734158,-3.23508167
+	persistentId = 369039227
+	pos = 3.2646246,18.0734158,-3.23508453
 	attPos = 0,0,0
 	attPos0 = -1.24140906,1.4880352,1.19404888E-06
 	rot = -1.23414182E-07,1.00000012,5.68434189E-14,-2.08616257E-07
@@ -6073,11 +6077,11 @@ PART
 {
 	part = fuelLine_4290901694
 	partName = CompoundPart
-	persistentId = 2060627526
-	pos = 0.776116252,24.6580849,2.89352298
+	persistentId = 3438040362
+	pos = 0.776115537,24.6580849,2.89352393
 	attPos = 0,0,0
 	attPos0 = -5.03863021E-07,1.1566087,-1.24708986
-	rot = -2.6009684E-07,2.08616257E-07,1.48103865E-07,1.00000012
+	rot = -2.6009684E-07,2.08616257E-07,1.48103936E-07,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 1.04725196E-07,0.707106709,-1.04725146E-07,-0.707106948
 	mir = 1,1,1
@@ -6144,8 +6148,8 @@ PART
 {
 	part = fuelLine_4290900454
 	partName = CompoundPart
-	persistentId = 427818037
-	pos = 3.27030897,24.6580849,-3.23507571
+	persistentId = 2995930772
+	pos = 3.27030993,24.6580849,-3.23507667
 	attPos = 0,0,0
 	attPos0 = -1.21911876E-06,1.1566087,-1.24709034
 	rot = 1.48103737E-07,1.00000012,2.6009684E-07,-2.38418579E-07
@@ -6215,8 +6219,8 @@ PART
 {
 	part = Rockomax32.BW_4290438458
 	partName = Part
-	persistentId = 1290722381
-	pos = 2.02321219,27.2214775,2.89352417
+	persistentId = 1229575437
+	pos = 2.02321219,27.2214775,2.89352703
 	attPos = 0,0,0
 	attPos0 = -1.4400797E-06,3.72000122,0
 	rot = 0,0,0,1.00000012
@@ -6295,8 +6299,8 @@ PART
 {
 	part = Rockomax32.BW_4290437088
 	partName = Part
-	persistentId = 2440842439
-	pos = 2.02321172,27.2214775,-3.23507643
+	persistentId = 626204266
+	pos = 2.02321172,27.2214775,-3.23507929
 	attPos = 0,0,0
 	attPos0 = -1.4400797E-06,3.72000122,0
 	rot = 0,1.00000012,0,-1.1920929E-07
@@ -6375,8 +6379,8 @@ PART
 {
 	part = rocketNoseCone_4290938232
 	partName = Part
-	persistentId = 2457531790
-	pos = 2.02321219,29.0814781,2.89352584
+	persistentId = 489495997
+	pos = 2.02321219,29.0814781,2.89352965
 	attPos = 0,0,0
 	attPos0 = 2.27373621E-13,1.86000061,6.4654904E-07
 	rot = 0,0,0,1.00000012
@@ -6412,8 +6416,8 @@ PART
 {
 	part = rocketNoseCone_4290436772
 	partName = Part
-	persistentId = 2747319361
-	pos = 2.02321172,29.0814781,-3.2350781
+	persistentId = 1926719175
+	pos = 2.02321172,29.0814781,-3.23508191
 	attPos = 0,0,0
 	attPos0 = 2.27373621E-13,1.86000061,6.4654904E-07
 	rot = 4.26325641E-14,1.00000012,2.84217094E-14,-1.1920929E-07
@@ -6449,22 +6453,22 @@ PART
 {
 	part = radialDrogue_4294357528
 	partName = Part
-	persistentId = 665655882
-	pos = 2.02321219,17.9199829,4.13013554
+	persistentId = 1841669631
+	pos = 2.02321219,17.9199829,4.1301403
 	attPos = 0,0,0
 	attPos0 = -1.19209275E-07,1.33460259,1.23660624
-	rot = 0,1.00000012,-4.60589462E-07,0
+	rot = 0,1.00000012,-4.6058949E-07,0
 	attRot = 0,0,0,1
 	attRot0 = 0,1,-4.60589376E-07,0
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 1
 	resPri = 0
 	dstg = 3
-	sidx = 0
-	sqor = 3
+	sidx = 2
+	sqor = 1
 	sepI = 1
 	attm = 1
 	modCost = 0
@@ -6560,8 +6564,8 @@ PART
 {
 	part = radialDrogue_4294354726
 	partName = Part
-	persistentId = 864493760
-	pos = 2.02321172,17.9199829,-4.47168875
+	persistentId = 1501982507
+	pos = 2.02321172,17.9199829,-4.47169352
 	attPos = 0,0,0
 	attPos0 = 2.40907283E-13,1.33460259,1.23660767
 	rot = -4.6058949E-07,-1.1920929E-07,1.27897692E-13,-1.00000012
@@ -6571,11 +6575,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 1
 	resPri = 0
 	dstg = 3
-	sidx = 0
-	sqor = 3
+	sidx = 2
+	sqor = 1
 	sepI = 1
 	attm = 1
 	modCost = 0
@@ -6671,22 +6675,22 @@ PART
 {
 	part = parachuteRadial_4294352858
 	partName = Part
-	persistentId = 3361972738
-	pos = 2.02321219,15.986969,4.12031507
+	persistentId = 1294126201
+	pos = 2.02321219,15.986969,4.12031984
 	attPos = 0,0,0
 	attPos0 = -1.19209275E-07,-0.59841156,1.22678566
-	rot = 0,1.00000012,-4.60589462E-07,0
+	rot = 0,1.00000012,-4.6058949E-07,0
 	attRot = 0,0,0,1
 	attRot0 = 0,1,-4.60589376E-07,0
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 1
 	resPri = 0
 	dstg = 3
-	sidx = 1
-	sqor = 3
+	sidx = 3
+	sqor = 1
 	sepI = 1
 	attm = 1
 	modCost = 0
@@ -6782,8 +6786,8 @@ PART
 {
 	part = parachuteRadial_4294352196
 	partName = Part
-	persistentId = 4156940592
-	pos = 2.02321172,15.986969,-4.46186829
+	persistentId = 447957426
+	pos = 2.02321172,15.986969,-4.46187305
 	attPos = 0,0,0
 	attPos0 = -9.44417071E-14,-0.59841156,1.22678709
 	rot = -4.6058949E-07,-1.1920929E-07,1.27897692E-13,-1.00000012
@@ -6793,11 +6797,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 1
 	resPri = 0
 	dstg = 3
-	sidx = 1
-	sqor = 3
+	sidx = 3
+	sqor = 1
 	sepI = 1
 	attm = 1
 	modCost = 0
@@ -6891,246 +6895,24 @@ PART
 }
 PART
 {
-	part = parachuteRadial_4294350838
-	partName = Part
-	persistentId = 931043923
-	pos = 2.02321219,16.0626698,1.67017901
-	attPos = 0,0,0
-	attPos0 = 5.96045737E-08,-0.5227108,-1.22334874
-	rot = 4.60589433E-07,1.1920929E-07,4.26325641E-14,-1.00000012
-	attRot = 0,0,0,1
-	attRot0 = 4.60589348E-07,1.19209275E-07,2.8421706E-14,-1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 3
-	resPri = 0
-	dstg = 3
-	sidx = 2
-	sqor = 3
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = parachuteRadial_4294349036
-	srfN = srfAttach,Rockomax32.BW_4290959766
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleParachute
-		isEnabled = True
-		persistentState = STOWED
-		animTime = 0
-		minAirPressureToOpen = 0.0399999991
-		deployAltitude = 1000
-		spreadAngle = 7
-		automateSafeDeploy = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DeployAction
-			{
-				actionGroup = None
-			}
-			CutAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = parachuteRadial_4294349036
-	partName = Part
-	persistentId = 1697188769
-	pos = 2.02321172,16.0626698,-2.01173115
-	attPos = 0,0,0
-	attPos0 = -5.9604794E-08,-0.5227108,-1.22334874
-	rot = -8.52651283E-14,-1.00000012,-4.6058949E-07,1.1920929E-07
-	attRot = 0,0,0,1
-	attRot0 = 4.60589376E-07,-1.96361029E-20,-1.11618331E-33,-1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 3
-	resPri = 0
-	dstg = 3
-	sidx = 2
-	sqor = 3
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = parachuteRadial_4294350838
-	srfN = srfAttach,Rockomax32.BW_4290958892
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleParachute
-		isEnabled = True
-		persistentState = STOWED
-		animTime = 0
-		minAirPressureToOpen = 0.0399999991
-		deployAltitude = 1000
-		spreadAngle = 7
-		automateSafeDeploy = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DeployAction
-			{
-				actionGroup = None
-			}
-			CutAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
 	part = radialDrogue_4294347186
 	partName = Part
-	persistentId = 2884118406
-	pos = 2.02321219,28.8186722,4.12540436
+	persistentId = 4014722986
+	pos = 2.02321219,28.8186722,4.12540913
 	attPos = 0,0,0
 	attPos0 = -1.19209247E-07,1.59719479,1.23187912
-	rot = 0,1.00000012,-4.60589462E-07,0
+	rot = 0,1.00000012,-4.6058949E-07,0
 	attRot = 0,0,0,1
 	attRot0 = 0,1,-4.60589376E-07,0
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 0
 	resPri = 0
 	dstg = 1
-	sidx = 2
-	sqor = 1
+	sidx = 1
+	sqor = 0
 	sepI = 0
 	attm = 1
 	modCost = 0
@@ -7226,22 +7008,22 @@ PART
 {
 	part = radialDrogue_4294346480
 	partName = Part
-	persistentId = 3271124326
-	pos = 2.02321196,28.8186722,-4.46695757
+	persistentId = 3000485185
+	pos = 2.02321196,28.8186722,-4.46696234
 	attPos = 0,0,0
 	attPos0 = -2.3841838E-07,1.59719479,1.23188055
-	rot = -4.60589376E-07,-1.1920929E-07,5.68434189E-14,-1.00000012
+	rot = -4.6058932E-07,-1.1920929E-07,5.68434189E-14,-1.00000012
 	attRot = 0,0,0,1
 	attRot0 = -1.4210853E-14,1,-4.6058932E-07,0
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 0
 	resPri = 0
 	dstg = 1
-	sidx = 2
-	sqor = 1
+	sidx = 1
+	sqor = 0
 	sepI = 0
 	attm = 1
 	modCost = 0
@@ -7337,22 +7119,22 @@ PART
 {
 	part = parachuteRadial_4294345184
 	partName = Part
-	persistentId = 1399091224
-	pos = 2.02321219,28.0425301,4.13495207
+	persistentId = 3419798515
+	pos = 2.02321219,28.0425301,4.13495684
 	attPos = 0,0,0
 	attPos0 = -1.19209247E-07,0.82105273,1.24142671
-	rot = 0,1.00000012,-4.60589462E-07,0
+	rot = 0,1.00000012,-4.6058949E-07,0
 	attRot = 0,0,0,1
 	attRot0 = 0,1,-4.60589376E-07,0
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 0
 	resPri = 0
 	dstg = 1
-	sidx = 3
-	sqor = 1
+	sidx = 2
+	sqor = 0
 	sepI = 0
 	attm = 1
 	modCost = 0
@@ -7448,22 +7230,22 @@ PART
 {
 	part = parachuteRadial_4294344522
 	partName = Part
-	persistentId = 2755631333
-	pos = 2.02321196,28.0425301,-4.47650528
+	persistentId = 1246436394
+	pos = 2.02321196,28.0425301,-4.47651005
 	attPos = 0,0,0
 	attPos0 = -2.38418465E-07,0.82105273,1.24142814
-	rot = -4.60589376E-07,-1.1920929E-07,5.68434189E-14,-1.00000012
+	rot = -4.6058932E-07,-1.1920929E-07,5.68434189E-14,-1.00000012
 	attRot = 0,0,0,1
 	attRot0 = -1.4210853E-14,1,-4.6058932E-07,0
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 0
 	resPri = 0
 	dstg = 1
-	sidx = 3
-	sqor = 1
+	sidx = 2
+	sqor = 0
 	sepI = 0
 	attm = 1
 	modCost = 0
@@ -7559,22 +7341,22 @@ PART
 {
 	part = parachuteRadial_4294342120
 	partName = Part
-	persistentId = 4258854062
-	pos = 2.02321219,28.6403046,1.66546094
+	persistentId = 1446657364
+	pos = 2.02321219,28.6403046,1.66546237
 	attPos = 0,0,0
 	attPos0 = 5.96046021E-08,1.41882694,-1.22806275
-	rot = 4.60589433E-07,1.1920929E-07,4.26325641E-14,-1.00000012
+	rot = 4.60589433E-07,1.1920929E-07,1.42108547E-13,-1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 4.60589348E-07,1.19209275E-07,2.8421706E-14,-1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 0
 	resPri = 0
 	dstg = 1
-	sidx = 4
-	sqor = 1
+	sidx = 3
+	sqor = 0
 	sepI = 0
 	attm = 1
 	modCost = 0
@@ -7670,8 +7452,8 @@ PART
 {
 	part = parachuteRadial_4294340766
 	partName = Part
-	persistentId = 3806905073
-	pos = 2.02321172,28.6403046,-2.00701308
+	persistentId = 1224289515
+	pos = 2.02321172,28.6403046,-2.00701499
 	attPos = 0,0,0
 	attPos0 = -5.96045524E-08,1.41882694,-1.22806275
 	rot = -4.26325641E-14,-1.00000012,-4.60589376E-07,1.1920929E-07
@@ -7681,11 +7463,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 0
 	resPri = 0
 	dstg = 1
-	sidx = 4
-	sqor = 1
+	sidx = 3
+	sqor = 0
 	sepI = 0
 	attm = 1
 	modCost = 0
@@ -7693,6 +7475,672 @@ PART
 	modSize = 0,0,0
 	sym = parachuteRadial_4294342120
 	srfN = srfAttach,Rockomax32.BW_4290437088
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleParachute
+		isEnabled = True
+		persistentState = STOWED
+		animTime = 0
+		minAirPressureToOpen = 0.0399999991
+		deployAltitude = 1000
+		spreadAngle = 7
+		automateSafeDeploy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			CutAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = parachuteRadial_4294349036
+	partName = Part
+	persistentId = 3561676540
+	pos = 2.02321219,8.03483963,-4.53862953
+	attPos = 0,0,0
+	attPos0 = -1.30353653,1.38546181,-3.57627727E-07
+	rot = 1.09808188E-05,1.78813934E-07,1.91846539E-12,-1.00000024
+	attRot = 0,0,0,1
+	attRot0 = -7.76461093E-06,0.707106709,7.7646082E-06,0.707106948
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 3
+	sidx = 4
+	sqor = 1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = parachuteRadial_4293222782
+	srfN = srfAttach,Size2LFB_4290958480
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleParachute
+		isEnabled = True
+		persistentState = STOWED
+		animTime = 0
+		minAirPressureToOpen = 0.0399999991
+		deployAltitude = 1000
+		spreadAngle = 7
+		automateSafeDeploy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			CutAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = parachuteRadial_4293222782
+	partName = Part
+	persistentId = 2840963638
+	pos = 2.02321172,8.03483963,4.19707918
+	attPos = 0,0,0
+	attPos0 = -1.30353796,1.38546181,-4.76836959E-07
+	rot = -2.91322522E-12,1.00000024,1.09808188E-05,2.68220901E-07
+	attRot = 0,0,0,1
+	attRot0 = -7.76461093E-06,0.707106709,7.7646082E-06,0.707106948
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 3
+	sidx = 4
+	sqor = 1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = parachuteRadial_4294349036
+	srfN = srfAttach,Size2LFB_4291290694
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleParachute
+		isEnabled = True
+		persistentState = STOWED
+		animTime = 0
+		minAirPressureToOpen = 0.0399999991
+		deployAltitude = 1000
+		spreadAngle = 7
+		automateSafeDeploy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			CutAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = parachuteRadial_4294286706
+	partName = Part
+	persistentId = 1741920348
+	pos = 2.02321148,11.5613365,-4.48297358
+	attPos = 0,0,0
+	attPos0 = 2.38417925E-07,-1.30404282,1.24788427
+	rot = 2.75924208E-08,-1.1920929E-07,4.26325641E-14,-1.00000012
+	attRot = 0,0,0,1
+	attRot0 = 6.68671294E-35,1,2.75925025E-08,1.17633898E-21
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 3
+	sidx = 5
+	sqor = 1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = parachuteRadial_4293222356
+	srfN = srfAttach,Rockomax32.BW_4290958524
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleParachute
+		isEnabled = True
+		persistentState = STOWED
+		animTime = 0
+		minAirPressureToOpen = 0.0399999991
+		deployAltitude = 1000
+		spreadAngle = 7
+		automateSafeDeploy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			CutAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = parachuteRadial_4293222356
+	partName = Part
+	persistentId = 2525058651
+	pos = 2.02321267,11.5613365,4.14142323
+	attPos = 0,0,0
+	attPos0 = 3.57627442E-07,-1.30404282,1.2478857
+	rot = 0,1.00000012,2.75924776E-08,0
+	attRot = 0,0,0,1
+	attRot0 = 1.4210853E-14,1,2.75925025E-08,0
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 3
+	sidx = 5
+	sqor = 1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = parachuteRadial_4294286706
+	srfN = srfAttach,Rockomax32.BW_4291306810
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleParachute
+		isEnabled = True
+		persistentState = STOWED
+		animTime = 0
+		minAirPressureToOpen = 0.0399999991
+		deployAltitude = 1000
+		spreadAngle = 7
+		automateSafeDeploy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			CutAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = parachuteRadial_4293216668
+	partName = Part
+	persistentId = 647224127
+	pos = 2.02321148,22.2609272,-4.47088242
+	attPos = 0,0,0
+	attPos0 = -1.23580539,-1.24054968,1.1920924E-07
+	rot = -5.81692916E-08,-1.1920929E-07,-2.84217094E-14,-1.00000012
+	attRot = 0,0,0,1
+	attRot0 = 1.42784302E-07,-0.707106829,-1.42784302E-07,-0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 1
+	sidx = 4
+	sqor = 0
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = parachuteRadial_4293216002
+	srfN = srfAttach,Rockomax32.BW_4291003976
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleParachute
+		isEnabled = True
+		persistentState = STOWED
+		animTime = 0
+		minAirPressureToOpen = 0.0399999991
+		deployAltitude = 1000
+		spreadAngle = 7
+		automateSafeDeploy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			CutAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = parachuteRadial_4293216002
+	partName = Part
+	persistentId = 1898423439
+	pos = 2.02321243,22.2609272,4.12933159
+	attPos = 0,0,0
+	attPos0 = -1.23580635,-1.24054968,0
+	rot = 0,1.00000012,-5.81692916E-08,0
+	attRot = 0,0,0,1
+	attRot0 = 1.42784302E-07,-0.707106829,-1.42784302E-07,-0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 1
+	sidx = 4
+	sqor = 0
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = parachuteRadial_4293216668
+	srfN = srfAttach,Rockomax32.BW_4291306854
 	EVENTS
 	{
 	}

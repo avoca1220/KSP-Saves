@@ -5578,7 +5578,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.4.5
-		UT = 9866709.1912905797
+		UT = 9866708.0712906048
 		activeVessel = 0
 		mapViewFiltering = 12284
 		commNetUIModeTracking = None

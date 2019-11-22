@@ -1,5 +1,5 @@
 vesselCount = 10
-UT = 9866709.1912905797
+UT = 9866708.0712906048
 gameMode = CAREER
 gameNull = False
 gameCompatible = True
@@ -12,4 +12,4 @@ missionIsStarted = False
 missionIsEnded = False
 missionHistoryId = 00000000-0000-0000-0000-000000000000
 missionExpansionVersion = 
-saveMD5 = b772ca56df09734ab6546b29df0a03fe
+saveMD5 = 2936262bc2eb9a30dcfc5269d01866b2
